@@ -1,0 +1,31 @@
+name: 每日国际时政新闻推送
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  push-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - run: pip install -r requirements.txt
+    - name: 运行推送程序
+      env:
+        WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
+        WECHAT_APPSECRET: ${{ secrets.WECHAT_APPSECRET }}
+        WECHAT_OPENID: ${{ secrets.WECHAT_OPENID }}
+        WECHAT_TEMPLATE_ID: ${{ secrets.WECHAT_TEMPLATE_ID }}
+      run: python main.py
+    - name: 更新文章页
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/index.html
+        git commit -m "每日更新" || echo "无变更"
+        git push
