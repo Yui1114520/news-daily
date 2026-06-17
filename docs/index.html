@@ -3,16 +3,454 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🌍 国际时政日报</title>
+<title>&#x1F30D; 国际时政日报 &middot; 2026年06月17日</title>
 <style>
-  body { font-family: sans-serif; text-align: center; padding: 50px; color: #666; background: #f0f2f5; }
-  .spinner { font-size: 40px; animation: spin 1s linear infinite; }
-  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f0f2f5;
+    color: #1a1a1a;
+    padding: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+    color: white;
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(26,35,126,0.3);
+  }
+  .header h1 { font-size: 22px; margin-bottom: 8px; }
+  .header .sub { font-size: 14px; opacity: 0.85; }
+  .stats {
+    display: flex; gap: 12px; justify-content: center;
+    margin-top: 14px; flex-wrap: wrap;
+  }
+  .stat-item {
+    background: rgba(255,255,255,0.15); border-radius: 8px;
+    padding: 6px 14px; font-size: 13px;
+  }
+  .news-card {
+    background: white; border-radius: 14px; padding: 18px;
+    margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    position: relative; overflow: hidden;
+  }
+  .top-badge {
+    position: absolute; top: 0; right: 0;
+    color: white; font-size: 11px; font-weight: bold;
+    padding: 4px 10px; border-radius: 0 14px 0 10px;
+  }
+  .rank {
+    display: inline-block; background: #1a237e; color: white;
+    border-radius: 50%; width: 28px; height: 28px;
+    text-align: center; line-height: 28px; font-size: 13px;
+    font-weight: bold; margin-bottom: 10px;
+  }
+  .news-title { font-size: 16px; font-weight: 700; line-height: 1.5; margin-bottom: 8px; }
+  .news-summary { font-size: 14px; color: #555; line-height: 1.6; margin-bottom: 10px; }
+  .news-meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  .source-tag {
+    background: #e8eaf6; color: #3949ab; border-radius: 4px;
+    padding: 2px 8px; font-size: 12px; font-weight: 600;
+  }
+  .pub-date { font-size: 12px; color: #999; }
+  .heat-bar {
+    background: #eee; border-radius: 4px; height: 18px;
+    position: relative; margin-bottom: 12px; overflow: hidden;
+  }
+  .heat-fill {
+    background: linear-gradient(90deg, #ff6b6b, #ffa502);
+    height: 100%; border-radius: 4px;
+  }
+  .heat-label { position: absolute; right: 6px; top: 0; font-size: 11px; color: #666; line-height: 18px; }
+  .read-btn {
+    display: block; text-align: center; background: #1a237e; color: white;
+    border-radius: 8px; padding: 8px; text-decoration: none;
+    font-size: 14px; font-weight: 600;
+  }
+  .read-btn:hover { background: #283593; }
+  .footer {
+    text-align: center; padding: 20px; color: #999; font-size: 13px;
+  }
 </style>
 </head>
 <body>
-  <div class="spinner">📡</div>
-  <h2>今日新闻正在生成中...</h2>
-  <p>请稍后刷新，或直接在微信中查看推送消息</p>
+<div class="header">
+  <h1>&#x1F30D; 国际时政日报</h1>
+  <div class="sub">2026年06月17日 星期三</div>
+  <div class="stats">
+    <div class="stat-item">&#x1F4CA; 共 20 条新闻</div>
+    <div class="stat-item">&#x1F525; 按热度排序</div>
+    <div class="stat-item">&#x1F916; AI自动翻译</div>
+  </div>
+</div>
+
+
+        <div class="news-card">
+            <div class="top-badge" style="background:#ff4444">TOP 1</div>
+            <div class="rank">No.1</div>
+            <div class="card-body">
+                <h2 class="news-title">在长岛镇谋杀八名妇女的连环杀手被终身监禁</h2>
+                <p class="news-summary">在激烈的交锋中，法官判处他三项无期徒刑，外加其他四项罪名，判处 25 年无期徒刑，所有罪名都是连续执行的。</p>
+                <div class="news-meta">
+                    <span class="source-tag">BBC</span>
+                    <span class="pub-date">2026-06-17 16:14</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:79%"></div>
+                    <span class="heat-label">热度 40.0</span>
+                </div>
+                <a href="https://www.bbc.com/news/articles/clyw29kvlydo?at_medium=RSS&at_campaign=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            <div class="top-badge" style="background:#ff8800">TOP 2</div>
+            <div class="rank">No.2</div>
+            <div class="card-body">
+                <h2 class="news-title">曼吉奥内的律师计划在国家谋杀案审判中进行精神病学辩护</h2>
+                <p class="news-summary">他们会辩称，联合健康首席执行官布莱恩·汤普森被杀时，他正遭受“极度情绪困扰”。</p>
+                <div class="news-meta">
+                    <span class="source-tag">BBC</span>
+                    <span class="pub-date">2026-06-17 15:52</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:79%"></div>
+                    <span class="heat-label">热度 39.8</span>
+                </div>
+                <a href="https://www.bbc.com/news/articles/c1lym76jyymo?at_medium=RSS&at_campaign=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            <div class="top-badge" style="background:#ffcc00">TOP 3</div>
+            <div class="rank">No.3</div>
+            <div class="card-body">
+                <h2 class="news-title">尼日利亚男子因在家外储存人类粪便而被判入狱</h2>
+                <p class="news-summary">邻居们表示，房子里的恶臭太严重了，根本不可能在家里放松。</p>
+                <div class="news-meta">
+                    <span class="source-tag">BBC</span>
+                    <span class="pub-date">2026-06-17 14:33</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:78%"></div>
+                    <span class="heat-label">热度 39.1</span>
+                </div>
+                <a href="https://www.bbc.com/news/articles/ce8jgr3vggno?at_medium=RSS&at_campaign=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.4</div>
+            <div class="card-body">
+                <h2 class="news-title">伊朗派遣满载石油的油轮突破美国军事封锁</h2>
+                <p class="news-summary">船舶追踪数据显示，三艘满载原油的伊朗油轮已通过美国在阿曼湾的封锁线。</p>
+                <div class="news-meta">
+                    <span class="source-tag">BBC</span>
+                    <span class="pub-date">2026-06-17 13:27</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:77%"></div>
+                    <span class="heat-label">热度 38.6</span>
+                </div>
+                <a href="https://www.bbc.com/news/articles/cpq37yxexd9o?at_medium=RSS&at_campaign=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.5</div>
+            <div class="card-body">
+                <h2 class="news-title">为什么专家警告最近的埃博拉疫情可能是“有史以来最严重的”？</h2>
+                <p class="news-summary">该病毒的传播速度超出了卫生工作者的追踪速度，国际资金也大幅减少。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 16:15</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:75%"></div>
+                    <span class="heat-label">热度 38.0</span>
+                </div>
+                <a href="https://www.aljazeera.com/news/2026/6/17/why-are-experts-warning-latest-ebola-outbreak-could-be-worst-ever?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.6</div>
+            <div class="card-body">
+                <h2 class="news-title">实时更新：特朗普在七国集团峰会上再次威胁伊朗后发表讲话</h2>
+                <p class="news-summary">特朗普总统早些时候表示，如果“他们不遵守协议”执行协议，美国将恢复轰炸伊朗，尽管他承认“没有人知道协议是什么”。</p>
+                <div class="news-meta">
+                    <span class="source-tag">NYTimes</span>
+                    <span class="pub-date">2026-06-17 16:13</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:75%"></div>
+                    <span class="heat-label">热度 38.0</span>
+                </div>
+                <a href="https://www.nytimes.com/live/2026/06/17/world/g7-summit-trump-france" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.7</div>
+            <div class="card-body">
+                <h2 class="news-title">英格兰 vs 克罗地亚：直播 – 2026 年世界杯</h2>
+                <p class="news-summary">在我们的文字评论流之前，关注我们的现场报道，以及完整的团队新闻报道。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 16:10</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:75%"></div>
+                    <span class="heat-label">热度 37.9</span>
+                </div>
+                <a href="https://www.aljazeera.com/sports/liveblog/2026/6/17/england-vs-croatia-live-world-cup-2026?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.8</div>
+            <div class="card-body">
+                <h2 class="news-title">纳纳瓦蒂：最后的谈判 |第 6 集 – 阿富汗</h2>
+                <p class="news-summary">在塔利班统治下，一名妇女努力与限制阿富汗妇女生活的男子进行谈判。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 16:00</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:75%"></div>
+                    <span class="heat-label">热度 37.8</span>
+                </div>
+                <a href="https://www.aljazeera.com/video/making-peace/2026/6/17/nanawati-the-last-negotiation-ep-6?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.9</div>
+            <div class="card-body">
+                <h2 class="news-title">以色列比比粉丝电视频道的明星们开始攻击特朗普</h2>
+                <p class="news-summary">支持总理本杰明·内塔尼亚胡的右翼广播公司第 14 频道的领导人物公开攻击美国总统的伊朗协议。</p>
+                <div class="news-meta">
+                    <span class="source-tag">NYTimes</span>
+                    <span class="pub-date">2026-06-17 15:41</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:75%"></div>
+                    <span class="heat-label">热度 37.7</span>
+                </div>
+                <a href="https://www.nytimes.com/2026/06/17/world/middleeast/israel-channel-14-trump-criticism.html" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.10</div>
+            <div class="card-body">
+                <h2 class="news-title">武装人员冲进刚果民主共和国医院后寻找六岁埃博拉患者</h2>
+                <p class="news-summary">在当前的疫情爆发期间，由于错误信息和恐惧，卫生设施受到攻击。</p>
+                <div class="news-meta">
+                    <span class="source-tag">BBC</span>
+                    <span class="pub-date">2026-06-17 11:26</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:75%"></div>
+                    <span class="heat-label">热度 37.6</span>
+                </div>
+                <a href="https://www.bbc.com/news/articles/cvgep4l397eo?at_medium=RSS&at_campaign=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.11</div>
+            <div class="card-body">
+                <h2 class="news-title">为什么以色列仍然可能破坏伊朗与美国的协议</h2>
+                <p class="news-summary">特朗普称这是一项历史性协议。但由于核谈判和以色列问题都悬而未决，双方实际上赢得了什么？</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 15:23</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:75%"></div>
+                    <span class="heat-label">热度 37.5</span>
+                </div>
+                <a href="https://www.aljazeera.com/video/the-take-2/2026/6/17/why-israel-could-still-derail-the-iran-us-deal?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.12</div>
+            <div class="card-body">
+                <h2 class="news-title">特朗普称莫迪为“杀手”和“天使”</h2>
+                <p class="news-summary">唐纳德·特朗普总统在法国七国集团峰会上称赞印度总理纳伦德拉·莫迪是“杀手”和“天使”。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 15:15</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:74%"></div>
+                    <span class="heat-label">热度 37.5</span>
+                </div>
+                <a href="https://www.aljazeera.com/video/newsfeed/2026/6/17/trump-calls-modi-a-killer-and-an?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.13</div>
+            <div class="card-body">
+                <h2 class="news-title">黎巴嫩北部机场的复兴为该地区带来经济希望</h2>
+                <p class="news-summary">雷内·懋婉机场将为伊斯坦布尔、迪拜和梅尔辛提供服务，这是振兴黎巴嫩北部经济计划的一部分。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 15:03</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:74%"></div>
+                    <span class="heat-label">热度 37.4</span>
+                </div>
+                <a href="https://www.aljazeera.com/news/2026/6/17/northern-lebanon-airport-revival-brings-economic-hope-for-the-region?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.14</div>
+            <div class="card-body">
+                <h2 class="news-title">2026 年世界杯：第六天</h2>
+                <p class="news-summary">半岛电视台的 @RahulP_Journo 有您的 #FIFAworldcup26 第 6 天回顾。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 14:54</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:74%"></div>
+                    <span class="heat-label">热度 37.3</span>
+                </div>
+                <a href="https://www.aljazeera.com/video/newsfeed/2026/6/17/world-cup-2026-day-six?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.15</div>
+            <div class="card-body">
+                <h2 class="news-title">德黑兰战争日记：在家射击战争</h2>
+                <p class="news-summary">当德黑兰遭受轰炸时，一位国际知名的伊朗摄影记者将镜头转向自己的城市。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 14:53</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:74%"></div>
+                    <span class="heat-label">热度 37.3</span>
+                </div>
+                <a href="https://www.aljazeera.com/video/witness/2026/6/17/tehran-war-diary-shooting-war-at-home?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.16</div>
+            <div class="card-body">
+                <h2 class="news-title">Telegram 挑战印度应用禁令，称此举违宪</h2>
+                <p class="news-summary">印度在试卷泄露后屏蔽了 Telegram，引发了法律挑战。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 14:52</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:74%"></div>
+                    <span class="heat-label">热度 37.3</span>
+                </div>
+                <a href="https://www.aljazeera.com/news/2026/6/17/telegram-challenges-india-app-ban-calls-move-unconstitutional?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.17</div>
+            <div class="card-body">
+                <h2 class="news-title">特朗普愤怒地捍卫伊朗协议，贬低奥巴马签署的协议</h2>
+                <p class="news-summary">特朗普总统否认美国将成为德黑兰 3000 亿美元重建基金的一部分，并辩称他的协议比巴拉克·奥巴马 (Barack Obama) 2015 年达成的协议更好。</p>
+                <div class="news-meta">
+                    <span class="source-tag">NYTimes</span>
+                    <span class="pub-date">2026-06-17 14:22</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:74%"></div>
+                    <span class="heat-label">热度 37.0</span>
+                </div>
+                <a href="https://www.nytimes.com/2026/06/17/us/politics/trump-iran-peace-deal-obama.html" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.18</div>
+            <div class="card-body">
+                <h2 class="news-title">俄罗斯艺术家和直言不讳的普京批评者在抗议几天后被枪杀</h2>
+                <p class="news-summary">就在柏林俄罗斯大使馆附近举行表演抗议三天后，俄罗斯艺术家在波兰被枪杀。</p>
+                <div class="news-meta">
+                    <span class="source-tag">AlJazeera</span>
+                    <span class="pub-date">2026-06-17 14:17</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:73%"></div>
+                    <span class="heat-label">热度 37.0</span>
+                </div>
+                <a href="https://www.aljazeera.com/video/newsfeed/2026/6/17/russian-artist-and-outspoken-putin-critic-shot-dead-days-after-protest?traffic_source=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.19</div>
+            <div class="card-body">
+                <h2 class="news-title">挪威王储妃成功接受肺移植手术</h2>
+                <p class="news-summary">患有肺纤维化的王储妃梅特玛丽特现在将在医院康复数周。</p>
+                <div class="news-meta">
+                    <span class="source-tag">BBC</span>
+                    <span class="pub-date">2026-06-17 10:15</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:73%"></div>
+                    <span class="heat-label">热度 37.0</span>
+                </div>
+                <a href="https://www.bbc.com/news/articles/c1eyg37qyqjo?at_medium=RSS&at_campaign=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            
+            <div class="rank">No.20</div>
+            <div class="card-body">
+                <h2 class="news-title">尽管特朗普批评，以色列对黎巴嫩发动新的打击</h2>
+                <p class="news-summary">特朗普周二表示，以色列总理本杰明·内塔尼亚胡需要“对黎巴嫩更加负责”。</p>
+                <div class="news-meta">
+                    <span class="source-tag">BBC</span>
+                    <span class="pub-date">2026-06-17 10:01</span>
+                </div>
+                <div class="heat-bar">
+                    <div class="heat-fill" style="width:73%"></div>
+                    <span class="heat-label">热度 36.9</span>
+                </div>
+                <a href="https://www.bbc.com/news/articles/c7vyn17g832o?at_medium=RSS&at_campaign=rss" class="read-btn" target="_blank">&#x1F4D6; 阅读原文</a>
+            </div>
+        </div>
+        
+
+<div class="footer">
+  WorkBuddy 自动抓取 &middot; AI翻译 &middot; 热度排序<br>
+  每日早上 8:00 自动更新
+</div>
 </body>
 </html>
