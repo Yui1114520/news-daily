@@ -382,12 +382,16 @@ def _tokenize(text):
 def _load_keyword_cache():
     """从 keywords_cache.json 加载历史上学习到的新关键词"""
     cache_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keywords_cache.json")
-    if os.path.exists(cache_path):
-        try:
-            with open(cache_path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            pass
+    if not os.path.exists(cache_path):
+        # 如果缓存文件不存在（首次运行），创建空缓存
+        with open(cache_path, "w", encoding="utf-8") as f:
+            json.dump({"domains": {}, "regions": {}, "updated": ""}, f, ensure_ascii=False, indent=2)
+        return {"domains": {}, "regions": {}, "updated": ""}
+    try:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        pass
     return {"domains": {}, "regions": {}, "updated": ""}
 
 
@@ -400,6 +404,93 @@ def _save_keyword_cache(cache):
         print("[学习] 关键词缓存已保存")
     except Exception as e:
         print("[学习] 保存缓存失败: " + str(e))
+
+
+def reflect_keywords(all_news, domains, regions):
+    """
+    关键词反思机制：推送完成后自动审查学到的关键词
+    - 对每个学到的关键词，统计它在当前分类新闻中的"命中率"
+    - 命中率 = 该词出现在该领域/区域新闻中的比例 vs 出现在全部新闻中的比例
+    - 如果命中率 < 50%（说明这个词不够专精，分类不准），从关键词和缓存中删除
+    """
+    cache = _load_keyword_cache()
+    removed_count = 0
+
+    # ----- 反思领域关键词 -----
+    for d in domains:
+        d_id = d["id"]
+        learned_kws = cache.get("domains", {}).get(d_id, [])
+        if not learned_kws:
+            continue
+
+        # 该领域新闻的文本集
+        d_news = [n for n in all_news if n.get("domain") == d_id]
+        d_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in d_news]
+        # 全部新闻的文本集
+        all_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in all_news]
+
+        to_remove = []
+        for kw in learned_kws:
+            # 该词在该领域新闻中的命中率
+            d_hits = sum(1 for t in d_texts if _kw_match(kw, t))
+            d_rate = d_hits / max(len(d_texts), 1)
+            # 该词在全部新闻中的命中率
+            a_hits = sum(1 for t in all_texts if _kw_match(kw, t))
+            a_rate = a_hits / max(len(all_texts), 1)
+            # 如果该领域命中率 <= 全体命中率（说明这个词不专精于该领域）
+            if d_rate <= a_rate * 1.0 or d_hits < 1:
+                to_remove.append(kw)
+                print("  [反思·领域:" + d["name"] + "] 删除不恰当关键词: " + kw
+                      + " (领域命中率 {:.0%}".format(d_rate) + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+
+        # 从 keywords 列表和缓存中移除
+        for kw in to_remove:
+            if kw in d["keywords"]:
+                d["keywords"].remove(kw)
+            removed_count += 1
+
+        # 更新缓存：只保留通过反思的词
+        surviving = [kw for kw in learned_kws if kw not in to_remove]
+        cache["domains"][d_id] = surviving
+
+    # ----- 反思区域关键词 -----
+    for r in regions:
+        r_id = r["id"]
+        learned_kws = cache.get("regions", {}).get(r_id, [])
+        if not learned_kws:
+            continue
+
+        r_news = [n for n in all_news if n.get("region") == r_id]
+        r_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in r_news]
+        all_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in all_news]
+
+        to_remove = []
+        for kw in learned_kws:
+            r_hits = sum(1 for t in r_texts if _kw_match(kw, t))
+            r_rate = r_hits / max(len(r_texts), 1)
+            a_hits = sum(1 for t in all_texts if _kw_match(kw, t))
+            a_rate = a_hits / max(len(all_texts), 1)
+            if r_rate <= a_rate * 1.0 or r_hits < 1:
+                to_remove.append(kw)
+                print("  [反思·区域:" + r["name"] + "] 删除不恰当关键词: " + kw
+                      + " (区域命中率 {:.0%}".format(r_rate) + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+
+        for kw in to_remove:
+            if kw in r["keywords"]:
+                r["keywords"].remove(kw)
+            removed_count += 1
+
+        surviving = [kw for kw in learned_kws if kw not in to_remove]
+        cache["regions"][r_id] = surviving
+
+    _save_keyword_cache(cache)
+
+    if removed_count > 0:
+        print("[反思] 本次共删除 " + str(removed_count) + " 个不恰当关键词")
+    else:
+        print("[反思] 所有所学关键词均通过审查，无需删除")
+
+    return removed_count
 
 
 def expand_keywords(all_news, domains, regions, min_freq=2, max_new=15):
@@ -695,6 +786,10 @@ def fetch_and_classify(translate=True):
     # 从已分类的新闻中学习新关键词，自动扩充
     print("关键词学习中...")
     expand_keywords(balanced_all, DOMAINS, REGIONS)
+
+    # 反思机制：审查学到的关键词，删除不恰当的
+    print("关键词反思中...")
+    reflect_keywords(balanced_all, DOMAINS, REGIONS)
 
     return top_news, balanced_all
 
