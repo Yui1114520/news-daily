@@ -22,10 +22,11 @@ jobs:
         WECHAT_OPENID: ${{ secrets.WECHAT_OPENID }}
         WECHAT_TEMPLATE_ID: ${{ secrets.WECHAT_TEMPLATE_ID }}
       run: python main.py
-    - name: 更新文章页
+    - name: 更新文章页 & 关键词缓存
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add docs/index.html
-        git commit -m "每日更新" || echo "无变更"
+        git add keywords_cache.json
+        git commit -m "每日更新 + 关键词学习" || echo "无变更"
         git push
