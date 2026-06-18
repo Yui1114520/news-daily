@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-国际时政新闻日报推送 - GitHub Actions 版 v4
+国际时政新闻日报推送 - GitHub Actions 版 v5
 按 10 个地理区域 x 10 个新闻领域 分类展示
-v4: 均衡分配算法改进（强制覆盖10区域+10领域）+ 摘要清洗 + 全词匹配
+v5: 每天3次推送(6:00/12:00/20:00) + 跨次去重 + 国内媒体源 + 关键词学习+反思
 """
 
 import os
@@ -92,7 +92,14 @@ NEWS_SOURCES = [
     {"name":"GoogleNews-Africa",   "url":"https://news.google.com/rss/search?q=africa+news&hl=en-US&gl=US&ceid=US:en",             "weight":7},
     {"name":"GoogleNews-Americas", "url":"https://news.google.com/rss/search?q=latin+america+caribbean+news&hl=en-US&gl=US&ceid=US:en", "weight":7},
 
-    # --- 主流媒体 RSS（长期稳定） ---
+    # --- 国内媒体（国际新闻视角） ---
+    {"name":"Xinhua-EN",       "url":"https://news.google.com/rss/search?q=site:xinhuanet.com+english&hl=en-US&gl=US&ceid=US:en",   "weight":9},
+    {"name":"CGTN",            "url":"https://news.google.com/rss/search?q=site:cgtn.com+world&hl=en-US&gl=US&ceid=US:en",          "weight":9},
+    {"name":"GlobalTimes-EN",  "url":"https://news.google.com/rss/search?q=site:globaltimes.cn&hl=en-US&gl=US&ceid=US:en",         "weight":8},
+    {"name":"SCMP",            "url":"https://www.scmp.com/rss/91/feed",                                                     "weight":9},
+    {"name":"Xinhua-CN-World", "url":"http://www.xinhuanet.com/english/rss/world.xml",                                      "weight":8},
+
+    # --- 主流国际媒体 RSS（长期稳定） ---
     {"name":"BBC",       "url":"https://feeds.bbci.co.uk/news/world/rss.xml",                              "weight":10},
     {"name":"Guardian",  "url":"https://www.theguardian.com/world/rss",                                     "weight":9},
     {"name":"AlJazeera", "url":"https://www.aljazeera.com/xml/rss/all.xml",                                "weight":9},
@@ -377,6 +384,55 @@ def _tokenize(text):
     """从英文文本中提取有意义的词（长度>=4，排除停用词）"""
     words = re.findall(r"\b[a-zA-Z]{4,}\b", text.lower())
     return [w for w in words if w not in _STOP_WORDS_EN]
+
+
+# ============================================================
+# 跨推送去重机制：每次推送后记录已推送新闻标题，
+# 下次推送时过滤掉已推送过的，确保3次推送内容不重复
+# ============================================================
+def _get_pushed_path():
+    """获取已推送新闻记录文件的路径"""
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "pushed_news.json")
+
+def load_pushed_titles():
+    """加载已推送新闻的标题集合（用于去重）"""
+    path = _get_pushed_path()
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            # data 格式: {"titles": ["标题1", "标题2", ...], "updated": "2026-06-18"}
+            titles = set(data.get("titles", []))
+            # 只保留最近24小时内的记录（超过24小时的自动过期，允许旧新闻重新出现）
+            updated = data.get("updated", "")
+            if updated:
+                try:
+                    last_push = datetime.strptime(updated, "%Y-%m-%d")
+                    # 如果记录超过24小时，清空（新的一天可以推昨天的旧新闻了）
+                    if datetime.now() - last_push > timedelta(hours=24):
+                        print("[去重] 已推送记录超过24小时，自动清空")
+                        return set()
+                except ValueError:
+                    pass
+            print("[去重] 已推送记录: {} 条新闻标题".format(len(titles)))
+            return titles
+        except Exception:
+            pass
+    return set()
+
+def save_pushed_titles(titles_set):
+    """保存已推送新闻的标题集合到 pushed_news.json"""
+    path = _get_pushed_path()
+    data = {
+        "titles": list(titles_set),
+        "updated": datetime.now().strftime("%Y-%m-%d")
+    }
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False)
+        print("[去重] 已保存推送记录: {} 条".format(len(titles_set)))
+    except Exception as e:
+        print("[去重] 保存失败: " + str(e))
 
 
 def _load_keyword_cache():
@@ -752,6 +808,9 @@ def fetch_and_classify(translate=True):
     # 启动时加载历史上学习到的关键词
     apply_cached_keywords(DOMAINS, REGIONS)
 
+    # 加载已推送新闻标题（去重）
+    pushed_titles = load_pushed_titles()
+
     all_news = []
     for src in NEWS_SOURCES:
         all_news.extend(fetch_rss(src))
@@ -763,6 +822,13 @@ def fetch_and_classify(translate=True):
         if key not in seen_keys:
             seen_keys.add(key)
             unique.append(n)
+
+    # 去重：过滤掉已经推送过的新闻
+    if pushed_titles:
+        before_count = len(unique)
+        unique = [n for n in unique if n["title"][:30] not in pushed_titles]
+        removed = before_count - len(unique)
+        print("[去重] 过滤掉 {} 条已推送新闻，剩余 {} 条".format(removed, len(unique)))
 
     for n in unique:
         n["_score"] = score_news(n)
@@ -790,6 +856,11 @@ def fetch_and_classify(translate=True):
     # 反思机制：审查学到的关键词，删除不恰当的
     print("关键词反思中...")
     reflect_keywords(balanced_all, DOMAINS, REGIONS)
+
+    # 保存本次推送的新闻标题到去重记录
+    for n in top_news:
+        pushed_titles.add(n["title"][:30])
+    save_pushed_titles(pushed_titles)
 
     return top_news, balanced_all
 
@@ -1070,7 +1141,7 @@ def send_wechat(news_list, article_url):
 # ============================================================
 def main():
     print("=" * 50)
-    print("国际时政日报 v4 - 10区域 x 10领域（强制全覆盖）")
+    print("国际时政日报 v5 - 每天3次推送·跨次去重·国内媒体源")
     print("=" * 50)
 
     top_news, all_news = fetch_and_classify(translate=True)
