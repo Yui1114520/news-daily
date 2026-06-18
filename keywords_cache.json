@@ -1,5 +1,21 @@
 {
-  "domains": {},
-  "regions": {},
+  "domains": {
+    "diplomacy": [
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
+    ]
+  },
+  "regions": {
+    "north_america": [
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
+    ]
+  },
   "updated": "2026-06-18"
 }
