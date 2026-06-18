@@ -680,13 +680,25 @@ def _save_keyword_cache(cache):
 
 def reflect_keywords(all_news, domains, regions):
     """
-    关键词反思机制：推送完成后自动审查学到的关键词
-    - 对每个学到的关键词，统计它在当前分类新闻中的"命中率"
-    - 命中率 = 该词出现在该领域/区域新闻中的比例 vs 出现在全部新闻中的比例
-    - 如果命中率 < 50%（说明这个词不够专精，分类不准），从关键词和缓存中删除
+    关键词反思机制 v2：推送完成后自动审查学到的关键词
+    改进：
+      1. 收紧阈值：领域命中率必须 ≥ 全体命中率的1.5倍才存活（旧版≤1.0×太宽松）
+      2. 跨领域交叉归位：如果词不适合领域A但在领域B命中率更高，移到领域B而非删除
+      3. 跨区域同理
     """
     cache = _load_keyword_cache()
     removed_count = 0
+    moved_count = 0
+
+    # 预计算：各领域新闻文本
+    domain_texts = {}
+    for d in domains:
+        d_id = d["id"]
+        d_news = [n for n in all_news if n.get("domain") == d_id]
+        domain_texts[d_id] = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in d_news]
+
+    all_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in all_news]
+    all_total = max(len(all_texts), 1)
 
     # ----- 反思领域关键词 -----
     for d in domains:
@@ -695,72 +707,152 @@ def reflect_keywords(all_news, domains, regions):
         if not learned_kws:
             continue
 
-        # 该领域新闻的文本集
-        d_news = [n for n in all_news if n.get("domain") == d_id]
-        d_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in d_news]
-        # 全部新闻的文本集
-        all_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in all_news]
+        d_texts_list = domain_texts[d_id]
+        d_total = max(len(d_texts_list), 1)
 
         to_remove = []
         for kw in learned_kws:
             # 该词在该领域新闻中的命中率
-            d_hits = sum(1 for t in d_texts if _kw_match(kw, t))
-            d_rate = d_hits / max(len(d_texts), 1)
-            # 该词在全部新闻中的命中率
+            d_hits = sum(1 for t in d_texts_list if _kw_match(kw, t))
+            d_rate = d_hits / d_total
+            # 该词在全体新闻中的命中率
             a_hits = sum(1 for t in all_texts if _kw_match(kw, t))
-            a_rate = a_hits / max(len(all_texts), 1)
-            # 如果该领域命中率 <= 全体命中率（说明这个词不专精于该领域）
-            if d_rate <= a_rate * 1.0 or d_hits < 1:
-                to_remove.append(kw)
-                print("  [反思·领域:" + d["name"] + "] 删除不恰当关键词: " + kw
-                      + " (领域命中率 {:.0%}".format(d_rate) + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+            a_rate = a_hits / max(all_total, 1)
 
-        # 从 keywords 列表和缓存中移除
-        for kw in to_remove:
+            # 专精度阈值：领域命中率必须 ≥ 全体命中率×1.5
+            # （旧版是 ≤ 1.0×删除，太宽松；新版改为 < 1.5×淘汰）
+            if d_rate < a_rate * 1.5 or d_hits < 1:
+                # --- 跨领域交叉归位：不直接删，找更适合的领域 ---
+                best_domain = None
+                best_rate = d_rate
+                for other_d in domains:
+                    if other_d["id"] == d_id:
+                        continue
+                    other_texts = domain_texts[other_d["id"]]
+                    other_total = max(len(other_texts), 1)
+                    other_hits = sum(1 for t in other_texts if _kw_match(kw, t))
+                    other_rate = other_hits / other_total
+                    if other_rate > best_rate and other_rate >= a_rate * 1.5:
+                        best_rate = other_rate
+                        best_domain = other_d
+
+                if best_domain:
+                    # 移到更适合的领域
+                    to_remove.append((kw, "move", best_domain["id"], best_domain["name"]))
+                    print("  [反思·领域:" + d["name"] + "] 移走关键词: " + kw
+                          + " → " + best_domain["name"]
+                          + " (原领域命中率 {:.0%}".format(d_rate)
+                          + ", 新领域命中率 {:.0%}".format(best_rate)
+                          + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+                else:
+                    # 没有任何领域适合，直接删除
+                    to_remove.append((kw, "delete", None, None))
+                    print("  [反思·领域:" + d["name"] + "] 删除不恰当关键词: " + kw
+                          + " (领域命中率 {:.0%}".format(d_rate) + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+
+        # 执行移除/移动
+        for kw, action, target_id, target_name in to_remove:
             if kw in d["keywords"]:
                 d["keywords"].remove(kw)
-            removed_count += 1
+            if action == "move" and target_id:
+                # 移到目标领域
+                target_d = next((dd for dd in domains if dd["id"] == target_id), None)
+                if target_d and kw not in target_d["keywords"]:
+                    target_d["keywords"].append(kw)
+                    # 更新缓存：加入目标领域的缓存
+                    if target_id not in cache["domains"]:
+                        cache["domains"][target_id] = []
+                    if kw not in cache["domains"][target_id]:
+                        cache["domains"][target_id].append(kw)
+                    moved_count += 1
+            else:
+                removed_count += 1
 
         # 更新缓存：只保留通过反思的词
-        surviving = [kw for kw in learned_kws if kw not in to_remove]
+        surviving = [kw for kw in learned_kws
+                     if kw not in [item[0] for item in to_remove]]
+        # 移走的词也从当前领域缓存中删除（已加到目标领域缓存）
+        surviving = [kw for kw in surviving if kw not in [item[0] for item in to_remove if item[1] == "move"]]
         cache["domains"][d_id] = surviving
 
     # ----- 反思区域关键词 -----
+    region_texts = {}
+    for r in regions:
+        r_id = r["id"]
+        r_news = [n for n in all_news if n.get("region") == r_id]
+        region_texts[r_id] = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in r_news]
+
     for r in regions:
         r_id = r["id"]
         learned_kws = cache.get("regions", {}).get(r_id, [])
         if not learned_kws:
             continue
 
-        r_news = [n for n in all_news if n.get("region") == r_id]
-        r_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in r_news]
-        all_texts = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in all_news]
+        r_texts_list = region_texts[r_id]
+        r_total = max(len(r_texts_list), 1)
 
         to_remove = []
         for kw in learned_kws:
-            r_hits = sum(1 for t in r_texts if _kw_match(kw, t))
-            r_rate = r_hits / max(len(r_texts), 1)
+            r_hits = sum(1 for t in r_texts_list if _kw_match(kw, t))
+            r_rate = r_hits / r_total
             a_hits = sum(1 for t in all_texts if _kw_match(kw, t))
-            a_rate = a_hits / max(len(all_texts), 1)
-            if r_rate <= a_rate * 1.0 or r_hits < 1:
-                to_remove.append(kw)
-                print("  [反思·区域:" + r["name"] + "] 删除不恰当关键词: " + kw
-                      + " (区域命中率 {:.0%}".format(r_rate) + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+            a_rate = a_hits / max(all_total, 1)
 
-        for kw in to_remove:
+            if r_rate < a_rate * 1.5 or r_hits < 1:
+                # --- 跨区域交叉归位 ---
+                best_region = None
+                best_rate = r_rate
+                for other_r in regions:
+                    if other_r["id"] == r_id:
+                        continue
+                    other_texts = region_texts[other_r["id"]]
+                    other_total = max(len(other_texts), 1)
+                    other_hits = sum(1 for t in other_texts if _kw_match(kw, t))
+                    other_rate = other_hits / other_total
+                    if other_rate > best_rate and other_rate >= a_rate * 1.5:
+                        best_rate = other_rate
+                        best_region = other_r
+
+                if best_region:
+                    to_remove.append((kw, "move", best_region["id"], best_region["name"]))
+                    print("  [反思·区域:" + r["name"] + "] 移走关键词: " + kw
+                          + " → " + best_region["name"]
+                          + " (原区域命中率 {:.0%}".format(r_rate)
+                          + ", 新区域命中率 {:.0%}".format(best_rate)
+                          + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+                else:
+                    to_remove.append((kw, "delete", None, None))
+                    print("  [反思·区域:" + r["name"] + "] 删除不恰当关键词: " + kw
+                          + " (区域命中率 {:.0%}".format(r_rate) + ", 全体命中率 {:.0%}".format(a_rate) + ")")
+
+        for kw, action, target_id, target_name in to_remove:
             if kw in r["keywords"]:
                 r["keywords"].remove(kw)
-            removed_count += 1
+            if action == "move" and target_id:
+                target_r = next((rr for rr in regions if rr["id"] == target_id), None)
+                if target_r and kw not in target_r["keywords"]:
+                    target_r["keywords"].append(kw)
+                    if target_id not in cache["regions"]:
+                        cache["regions"][target_id] = []
+                    if kw not in cache["regions"][target_id]:
+                        cache["regions"][target_id].append(kw)
+                    moved_count += 1
+            else:
+                removed_count += 1
 
-        surviving = [kw for kw in learned_kws if kw not in to_remove]
+        surviving = [kw for kw in learned_kws
+                     if kw not in [item[0] for item in to_remove]]
+        surviving = [kw for kw in surviving if kw not in [item[0] for item in to_remove if item[1] == "move"]]
         cache["regions"][r_id] = surviving
 
     _save_keyword_cache(cache)
 
-    if removed_count > 0:
-        print("[反思] 本次共删除 " + str(removed_count) + " 个不恰当关键词")
+    total_action = removed_count + moved_count
+    if total_action > 0:
+        print("[反思] 删除 " + str(removed_count) + " 个不恰当关键词，"
+              + "移动 " + str(moved_count) + " 个到更匹配的领域/区域")
     else:
-        print("[反思] 所有所学关键词均通过审查，无需删除")
+        print("[反思] 所有所学关键词均通过审查，无需调整")
 
     return removed_count
 
@@ -770,10 +862,15 @@ def expand_keywords(all_news, domains, regions, min_freq=2, max_new=15):
     从已分类的新闻中学习新关键词，自动扩充到 domains/regions 的 keywords 里
     - min_freq: 至少在 N 条新闻里出现才考虑加入
     - max_new: 每个领域/区域最多新增 N 个关键词
+    - 领域专精度校验：词不仅要在该领域高频，还必须在该领域命中率
+      显著高于其他领域（≥1.5倍）才加入，避免跨领域误归
     """
     cache = _load_keyword_cache()
     today = datetime.now().strftime("%Y-%m-%d")
     new_count = 0
+
+    # 预计算：每条新闻的文本（用于跨领域专精度校验）
+    all_texts_lower = [(n.get("title", "") + " " + n.get("summary", "")).lower() for n in all_news]
 
     # ----- 学习领域关键词 -----
     for d in domains:
@@ -795,7 +892,18 @@ def expand_keywords(all_news, domains, regions, min_freq=2, max_new=15):
         candidates = []
         for word, cnt in word_counts.most_common(80):
             if cnt >= min_freq and word not in existing_kws and len(word) >= 4:
-                candidates.append((word, cnt))
+                # --- 领域专精度校验 ---
+                # 该词在该领域新闻中的命中率
+                d_hits = sum(1 for t in all_texts_lower if _kw_match(word, t)
+                             and all_news[all_texts_lower.index(t)].get("domain") == d_id)
+                d_rate = d_hits / max(len([t for t in all_texts_lower
+                                           if all_news[all_texts_lower.index(t)].get("domain") == d_id]), 1)
+                # 该词在全体新闻中的命中率
+                a_hits = sum(1 for t in all_texts_lower if _kw_match(word, t))
+                a_rate = a_hits / max(len(all_texts_lower), 1)
+                # 专精度要求：领域命中率 ≥ 全体命中率的1.5倍
+                if d_rate >= a_rate * 1.5 or a_rate < 0.01:
+                    candidates.append((word, cnt))
 
         # 取 top 候选，加入 keywords
         added = cache.get("domains", {}).get(d_id, [])
@@ -832,9 +940,18 @@ def expand_keywords(all_news, domains, regions, min_freq=2, max_new=15):
         to_add = []
         for word, cnt in word_counts.most_common(80):
             if cnt >= min_freq and word not in existing_kws and len(word) >= 4 and word not in added:
-                to_add.append(word)
-                existing_kws.add(word)
-                new_count += 1
+                # --- 区域专精度校验 ---
+                r_hits = sum(1 for t in all_texts_lower if _kw_match(word, t)
+                             and all_news[all_texts_lower.index(t)].get("region") == r_id)
+                r_rate = r_hits / max(len([t for t in all_texts_lower
+                                           if all_news[all_texts_lower.index(t)].get("region") == r_id]), 1)
+                a_hits = sum(1 for t in all_texts_lower if _kw_match(word, t))
+                a_rate = a_hits / max(len(all_texts_lower), 1)
+                # 专精度要求：区域命中率 ≥ 全体命中率的1.5倍
+                if r_rate >= a_rate * 1.5 or a_rate < 0.01:
+                    to_add.append(word)
+                    existing_kws.add(word)
+                    new_count += 1
             if len(to_add) >= max_new:
                 break
 
