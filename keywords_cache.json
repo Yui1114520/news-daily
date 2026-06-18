@@ -1,10 +1,5 @@
 {
   "domains": {},
-  "regions": {
-    "north_america": [
-      "gemini",
-      "openai"
-    ]
-  },
-  "updated": "2026-06-18"
+  "regions": {},
+  "updated": ""
 }
