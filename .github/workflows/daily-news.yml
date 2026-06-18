@@ -1,7 +1,9 @@
 name: 每日国际时政新闻推送
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 22 * * *'   # 北京时间 6:00
+    - cron: '0 4 * * *'    # 北京时间 12:00
+    - cron: '0 12 * * *'   # 北京时间 20:00
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,11 +24,12 @@ jobs:
         WECHAT_OPENID: ${{ secrets.WECHAT_OPENID }}
         WECHAT_TEMPLATE_ID: ${{ secrets.WECHAT_TEMPLATE_ID }}
       run: python main.py
-    - name: 更新文章页 & 关键词缓存
+    - name: 更新文章页 & 缓存文件
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add docs/index.html
         git add keywords_cache.json
-        git commit -m "每日更新 + 关键词学习" || echo "无变更"
+        git add pushed_news.json
+        git commit -m "每日更新 + 关键词学习 + 去重记录" || echo "无变更"
         git push
