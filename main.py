@@ -291,38 +291,254 @@ def fetch_rss(source):
         print("  [FAIL] " + source["name"] + ": " + str(e))
         return []
 
+# ============================================================
+# 热度评分 v5：5维度量化体系（0-100标准分）
+# 参照国际新闻热度量化方案，在RSS数据限制下做务实映射
+# ============================================================
 
-def score_news(news):
+# 降噪关键词：娱乐/花边/自媒体蹭热度 → 降低K系数
+_ENTERTAINMENT_KW = [
+    "celebrity", "star", "fashion", "beauty", "gossip", "romance", "dating",
+    "tiktok", "influencer", "viral", "trend", "lifestyle", "diet", "weight",
+    "award show", "red carpet", "concert tour", "fan", "fans",
+    "网红", "明星", "八卦", "花边", "绯闻", "综艺", "选秀", "追星", "流量",
+]
+
+# 突发事件关键词 → 专项加分
+_BREAKING_KW = [
+    "war", "explosion", "attack", "earthquake", "tsunami", "nuclear",
+    "emergency", "crisis", "breaking", "martial law", "military coup",
+    "outbreak", "pandemic", "terrorist attack", "assassination", "invasion",
+    "战争", "爆炸", "袭击", "地震", "海啸", "核", "紧急", "危机", "突发",
+    "入侵", "政变", "暗杀",
+]
+
+# 多国连锁反应关键词 → 跨境影响加分
+_CHAIN_KW = [
+    "sanctions", "embassy", "diplomatic", "summit", "un security council",
+    "joint statement", "multilateral", "coalition", "alliance response",
+    "market crash", "currency", "oil price", "supply chain disruption",
+    "border closure", "travel ban", "trade war", "retaliatory",
+    "制裁", "使馆", "外交", "峰会", "安理会", "联合声明", "多边",
+    "市场暴跌", "汇率", "油价", "供应链断裂", "边境封锁", "贸易战", "报复性",
+]
+
+# 权威通讯社/头部媒体 → C维度加成
+_AUTHORITY_MEDIA = {
+    "BBC": 10, "Guardian": 9, "AlJazeera": 9, "Xinhua-EN": 9, "CGTN": 9,
+    "SCMP": 9, "GoogleNews-World": 10, "NPR-World": 8, "DW": 8, "France24": 8,
+    "GlobalTimes-EN": 7, "CNBC-World": 7, "SkyNews": 7, "RFI": 7, "ABC-Intl": 7,
+    "GoogleNews-Asia": 8, "GoogleNews-Europe": 8, "GoogleNews-MidEast": 8,
+    "GoogleNews-Africa": 7, "GoogleNews-Americas": 7, "Xinhua-CN-World": 8,
+}
+
+# 大洲映射（用于D维度跨大洲判定）
+_CONTINENT_MAP = {
+    "east_asia": "asia", "south_asia": "asia", "sea_oceania": "asia_oceania",
+    "central_asia": "asia", "middle_east": "mena",
+    "east_europe": "europe", "west_europe": "europe",
+    "north_america": "north_america", "latin_america": "latin_america",
+    "sub_sahara": "africa",
+}
+
+
+def _calc_raw_scores(news_list):
     """
-    热度评分 v3：
-      - 基础分 = 新闻源权重
-      - 时效性 = 越新分数越高（12小时内满分，48小时后衰减为0）
-      - 讨论度 = 标题/摘要的词频密度（长标题+多关键词命中 = 热）
+    对一批新闻计算5维原始分值（未归一化）
+    A-传播体量(35%): 源权重 + 多源转载近似（同一标题在不同RSS出现次数）
+    B-互动深度(25%): 专有名词密度 + 摘要信息密度 + 跨领域讨论度
+    C-权威背书(20%): 头部媒体权重 + 国际组织/政要关键词命中
+    D-跨国辐射(15%): 命中区域数 + 跨大洲分布 + 跨境连锁关键词
+    E-时效衰减(5%): 发布时长衰减 + 突发事件加成
     """
-    try:
-        pub = datetime.strptime(news["pub_date"], "%Y-%m-%d %H:%M")
-    except Exception:
-        pub = datetime.now()
+    # 统计同一标题在多少个不同RSS源出现（≈媒体转载量）
+    title_source_count = {}
+    for n in news_list:
+        key = n["title"][:40].lower()
+        if key not in title_source_count:
+            title_source_count[key] = set()
+        title_source_count[key].add(n.get("source", ""))
 
-    hours_ago = max(0, (datetime.now() - pub).total_seconds() / 3600)
+    results = []
+    for n in news_list:
+        text_lower = (n.get("title", "") + " " + n.get("summary", "")).lower()
+        text_raw = n.get("title", "") + " " + n.get("summary", "")
+        src_name = n.get("source", "")
 
-    # 时效性分数：12小时内满分18，48小时后归零（线性衰减）
-    if hours_ago <= 12:
-        time_score = 18
-    elif hours_ago <= 48:
-        time_score = 18 * (1 - (hours_ago - 12) / 36)
-    else:
-        time_score = 0
+        # ===== A: 传播体量 =====
+        a1_weight = _AUTHORITY_MEDIA.get(src_name, n.get("weight", 7))
+        title_key = n["title"][:40].lower()
+        a2_reprint = len(title_source_count.get(title_key, set()))
+        A_raw = a1_weight * 1.5 + min(a2_reprint * 3, 20)
 
-    # 讨论度：标题+摘要里的大写单词数（推测为专有名词/热点事件）
-    text = (news.get("title", "") + " " + news.get("summary", ""))
-    proper_nouns = len(re.findall(r"\b[A-Z][a-z]{2,}\b", text))
-    discussion_score = min(proper_nouns * 1.5, 12)  # 上限12分
+        # ===== B: 互动深度 =====
+        proper_nouns = len(re.findall(r"\b[A-Z][a-z]{2,}\b", text_raw))
+        summary_len = len(n.get("summary", "").strip())
+        info_density = min(summary_len / 15, 10)
+        domain_hits = 0
+        for d in DOMAINS:
+            if sum(1 for kw in d["keywords"] if _kw_match(kw, text_lower)) > 0:
+                domain_hits += 1
+        B_raw = min(proper_nouns * 1.2, 12) + info_density + min(domain_hits * 1.5, 9)
 
-    # 基础分：新闻源权重
-    base_score = news["weight"] * 1.5
+        # ===== C: 权威背书 =====
+        c1_authority = _AUTHORITY_MEDIA.get(src_name, 5)
+        authority_kws = [
+            "un", "united nations", "g20", "g7", "brics", "nato",
+            "imf", "world bank", "wto", "who", "asean", "summit",
+            "president", "minister", "secretary", "chancellor",
+            "prime minister", "foreign minister", "envoy",
+            "联合国", "G20", "金砖", "北约", "峰会", "总统", "总理", "外长",
+        ]
+        c2_hits = sum(1 for kw in authority_kws if _kw_match(kw, text_lower))
+        C_raw = c1_authority + min(c2_hits * 3, 12)
 
-    return base_score + time_score + discussion_score
+        # ===== D: 跨国辐射 =====
+        hit_regions = []
+        for r in REGIONS:
+            if sum(1 for kw in r["keywords"] if _kw_match(kw, text_lower)) > 0:
+                hit_regions.append(r["id"])
+        continents_hit = len(set(_CONTINENT_MAP.get(r, "other") for r in hit_regions))
+        chain_hits = sum(1 for kw in _CHAIN_KW if _kw_match(kw, text_lower))
+        D_raw = min(len(hit_regions) * 2, 10) + min(continents_hit * 3, 9) + min(chain_hits * 2.5, 8)
+
+        # ===== E: 时效衰减 =====
+        try:
+            pub = datetime.strptime(n["pub_date"], "%Y-%m-%d %H:%M")
+        except Exception:
+            pub = datetime.now()
+        hours_ago = max(0, (datetime.now() - pub).total_seconds() / 3600)
+
+        # 时效基础分：12h内满分10，48h后归零
+        if hours_ago <= 12:
+            time_base = 10
+        elif hours_ago <= 48:
+            time_base = 10 * (1 - (hours_ago - 12) / 36)
+        else:
+            time_base = 0
+
+        # 突发加成
+        breaking_hits = sum(1 for kw in _BREAKING_KW if _kw_match(kw, text_lower))
+        breaking_bonus = min(breaking_hits * 4, 10)
+        E_raw = time_base + breaking_bonus
+
+        # ===== 降噪系数 K =====
+        ent_hits = sum(1 for kw in _ENTERTAINMENT_KW if _kw_match(kw, text_lower))
+        if ent_hits >= 3:
+            K = 0.5  # 明确娱乐化 → 大幅降权
+        elif ent_hits >= 1:
+            K = 0.8  # 有娱乐花边 → 适度降权
+        else:
+            K = 1.0  # 纯时政 → 不降权
+
+        # ===== 专项加减分 =====
+        bonus = 0
+        penalty = 0
+
+        # 加分：多国联合外交/紧急会议
+        if any(kw in text_lower for kw in ["un security council", "emergency meeting", "joint statement",
+                                            "安理会", "紧急会议", "联合声明"]):
+            bonus += 4
+        # 加分：全球市场联动
+        if any(kw in text_lower for kw in ["market crash", "oil price surge", "currency crisis",
+                                            "市场暴跌", "油价飙升", "汇率危机"]):
+            bonus += 3
+        # 加分：多国街头游行/军事调动
+        if any(kw in text_lower for kw in ["protest", "military mobilization", "troop deployment",
+                                            "抗议", "军事调动", "部署军队"]):
+            bonus += 2
+
+        # 扣分：仅单一小国地方民生，无跨境影响
+        if len(hit_regions) <= 1 and domain_hits <= 1 and c2_hits == 0:
+            penalty += 4
+        # 扣分：娱乐化解读无地缘实质
+        if ent_hits >= 2 and domain_hits <= 2:
+            penalty += 5
+
+        bonus = min(bonus, 10)
+        penalty = min(penalty, 10)
+
+        results.append({
+            "A": A_raw, "B": B_raw, "C": C_raw, "D": D_raw, "E": E_raw,
+            "K": K, "bonus": bonus, "penalty": penalty,
+        })
+
+    return results
+
+
+def _min_max_normalize(values):
+    """Min-Max归一化到0-100，空列表返回0"""
+    if not values:
+        return []
+    min_v = min(values)
+    max_v = max(values)
+    if max_v == min_v:
+        return [50.0 for _ in values]  # 全部相同 → 中间值
+    return [(v - min_v) / (max_v - min_v) * 100.0 for v in values]
+
+
+def score_news_batch(news_list):
+    """
+    批量热度评分 v5：5维度 + Min-Max归一化 + 降噪修正 + 专项加减分
+    
+    最终输出每条新闻的 _score 字段（0-100标准热度分）
+    H = 0.35*A + 0.25*B + 0.20*C + 0.15*D + 0.05*E  (归一化后)
+    H修正 = H * K
+    H最终 = max(0, H修正 + bonus - penalty)
+    
+    热度分级：
+    0-30: 低热度（单一小国文旅、地方民生）
+    30-60: 中等（双边常规经贸、普通外事）
+    60-80: 高热度（区域冲突、大国峰会、跨国经济政策）
+    80-100: 顶级全球热点（战争、大国冲突、全球危机）
+    """
+    if not news_list:
+        return
+
+    raw_scores = _calc_raw_scores(news_list)
+
+    # Min-Max归一化各维度
+    A_norm = _min_max_normalize([r["A"] for r in raw_scores])
+    B_norm = _min_max_normalize([r["B"] for r in raw_scores])
+    C_norm = _min_max_normalize([r["C"] for r in raw_scores])
+    D_norm = _min_max_normalize([r["D"] for r in raw_scores])
+    E_norm = _min_max_normalize([r["E"] for r in raw_scores])
+
+    for i, n in enumerate(news_list):
+        r = raw_scores[i]
+
+        # 5维度加权总分（归一化后0-100）
+        H = 0.35 * A_norm[i] + 0.25 * B_norm[i] + 0.20 * C_norm[i] + 0.15 * D_norm[i] + 0.05 * E_norm[i]
+
+        # 降噪修正
+        H_modified = H * r["K"]
+
+        # 专项加减分
+        H_final = max(0, H_modified + r["bonus"] - r["penalty"])
+
+        # 写入 _score
+        n["_score"] = round(H_final, 1)
+
+        # 调试输出（仅对前5条和最低分打印详情）
+        if i < 5 or H_final < 30:
+            print("  [热度] #{:<3} H={:.1f} (A={:.0f} B={:.0f} C={:.0f} D={:.0f} E={:.0f} K={:.1f} +{} -{}) {}".format(
+                i+1, H_final, A_norm[i], B_norm[i], C_norm[i], D_norm[i], E_norm[i],
+                r["K"], r["bonus"], r["penalty"],
+                n.get("title", "")[:40]))
+
+    # 热度分级统计
+    levels = {"顶级(80-100)": 0, "高热(60-80)": 0, "中等(30-60)": 0, "低热(0-30)": 0}
+    for n in news_list:
+        s = n["_score"]
+        if s >= 80:
+            levels["顶级(80-100)"] += 1
+        elif s >= 60:
+            levels["高热(60-80)"] += 1
+        elif s >= 30:
+            levels["中等(30-60)"] += 1
+        else:
+            levels["低热(0-30)"] += 1
+    print("[热度分级] " + " | ".join("{}: {}条".format(k, v) for k, v in levels.items()))
 
 
 # ============================================================
@@ -830,8 +1046,9 @@ def fetch_and_classify(translate=True):
         removed = before_count - len(unique)
         print("[去重] 过滤掉 {} 条已推送新闻，剩余 {} 条".format(removed, len(unique)))
 
-    for n in unique:
-        n["_score"] = score_news(n)
+    # 批量热度评分（5维度归一化+降噪+加减分）
+    print("热度评分中...")
+    score_news_batch(unique)
     unique.sort(key=lambda x: x["_score"], reverse=True)
 
     # 取候选池（TOP_N * 3 保证有足够多的新闻供均衡分配挑选）
