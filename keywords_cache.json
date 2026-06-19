@@ -1,21 +1,26 @@
 {
   "domains": {
-    "diplomacy": [
+    "diplomacy": [],
+    "livelihood": [
       "href",
       "https",
-      "news",
       "google",
       "articles"
+    ],
+    "tech": [
+      "news"
     ]
   },
   "regions": {
     "north_america": [
       "href",
       "https",
-      "news",
       "google",
       "articles"
+    ],
+    "south_asia": [
+      "news"
     ]
   },
-  "updated": "2026-06-18"
+  "updated": "2026-06-19"
 }
