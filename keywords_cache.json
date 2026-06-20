@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "axios"
+    ],
     "livelihood": [
       "href",
       "https",
@@ -17,11 +19,16 @@
       "https",
       "google",
       "articles",
-      "hyrox"
+      "china",
+      "world",
+      "nbsp"
     ],
     "south_asia": [
       "news"
+    ],
+    "middle_east": [
+      "axios"
     ]
   },
-  "updated": "2026-06-19"
+  "updated": "2026-06-20"
 }
