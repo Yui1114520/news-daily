@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "axios"
-    ],
+    "diplomacy": [],
     "livelihood": [
       "href",
       "https",
@@ -23,9 +21,7 @@
     "south_asia": [
       "news"
     ],
-    "middle_east": [
-      "axios"
-    ]
+    "middle_east": []
   },
   "updated": "2026-06-20"
 }
