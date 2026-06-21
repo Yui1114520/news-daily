@@ -19,10 +19,14 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "news"
     ],
     "south_asia": [
-      "news"
+      "news",
+      "jetten",
+      "xinhua",
+      "english"
     ],
     "middle_east": []
   },
