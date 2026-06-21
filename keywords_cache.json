@@ -5,10 +5,13 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "news"
     ],
     "tech": [
-      "news"
+      "news",
+      "xinhua",
+      "english"
     ]
   },
   "regions": {
@@ -16,12 +19,15 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "china",
+      "world",
+      "nbsp"
     ],
     "south_asia": [
       "news"
     ],
     "middle_east": []
   },
-  "updated": "2026-06-20"
+  "updated": "2026-06-21"
 }
