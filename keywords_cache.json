@@ -19,8 +19,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "news"
+      "articles"
     ],
     "south_asia": [
       "news",
@@ -28,7 +27,10 @@
       "xinhua",
       "english"
     ],
-    "middle_east": []
+    "middle_east": [],
+    "east_asia": [
+      "news"
+    ]
   },
-  "updated": "2026-06-21"
+  "updated": "2026-06-22"
 }
