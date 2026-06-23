@@ -17,24 +17,24 @@
   "regions": {
     "north_america": [
       "href",
-      "https",
       "google",
-      "articles",
-      "china",
-      "world",
-      "nbsp",
-      "abelardo",
-      "espriella"
+      "articles"
     ],
     "south_asia": [
       "news",
       "jetten",
       "xinhua",
-      "english"
+      "english",
+      "china",
+      "world"
     ],
     "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [
+    "sub_sahara": [],
+    "east_europe": [
+      "https"
+    ],
+    "latin_america": [
       "news"
     ]
   },
