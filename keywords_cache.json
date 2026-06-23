@@ -20,7 +20,11 @@
       "https",
       "google",
       "articles",
-      "news"
+      "china",
+      "world",
+      "nbsp",
+      "abelardo",
+      "espriella"
     ],
     "south_asia": [
       "news",
@@ -29,7 +33,10 @@
       "english"
     ],
     "middle_east": [],
-    "east_asia": []
+    "east_asia": [],
+    "sub_sahara": [
+      "news"
+    ]
   },
-  "updated": "2026-06-22"
+  "updated": "2026-06-23"
 }
