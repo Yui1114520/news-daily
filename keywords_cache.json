@@ -19,10 +19,7 @@
       "google",
       "articles",
       "href",
-      "https",
-      "ahmed",
-      "micah",
-      "lasher"
+      "https"
     ],
     "south_asia": [
       "news",
@@ -33,7 +30,8 @@
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [
+    "latin_america": [],
+    "west_europe": [
       "news"
     ]
   },
