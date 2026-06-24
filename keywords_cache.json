@@ -17,25 +17,25 @@
   "regions": {
     "north_america": [
       "google",
-      "articles"
+      "articles",
+      "href",
+      "https",
+      "ahmed",
+      "micah",
+      "lasher"
     ],
     "south_asia": [
       "news",
-      "jetten",
       "xinhua",
-      "english",
-      "china"
+      "english"
     ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [
-      "https"
-    ],
+    "east_europe": [],
     "latin_america": [
-      "news",
-      "href"
+      "news"
     ]
   },
-  "updated": "2026-06-23"
+  "updated": "2026-06-24"
 }
