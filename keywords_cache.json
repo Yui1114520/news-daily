@@ -19,7 +19,8 @@
       "google",
       "articles",
       "href",
-      "https"
+      "https",
+      "news"
     ],
     "south_asia": [
       "news",
@@ -31,7 +32,10 @@
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": []
+    "west_europe": [],
+    "sea_oceania": [
+      "gorebox"
+    ]
   },
   "updated": "2026-06-25"
 }
