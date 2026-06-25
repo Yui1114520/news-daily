@@ -1,9 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "micah",
-      "lasher"
-    ],
+    "diplomacy": [],
     "livelihood": [
       "href",
       "https",
@@ -22,11 +19,7 @@
       "google",
       "articles",
       "href",
-      "https",
-      "world",
-      "nbsp",
-      "micah",
-      "lasher"
+      "https"
     ],
     "south_asia": [
       "news",
@@ -40,5 +33,5 @@
     "latin_america": [],
     "west_europe": []
   },
-  "updated": "2026-06-24"
+  "updated": "2026-06-25"
 }
