@@ -19,7 +19,10 @@
       "google",
       "articles",
       "href",
-      "https"
+      "https",
+      "china",
+      "world",
+      "nbsp"
     ],
     "south_asia": [
       "news",
@@ -34,5 +37,5 @@
     "west_europe": [],
     "sea_oceania": []
   },
-  "updated": "2026-06-25"
+  "updated": "2026-06-26"
 }
