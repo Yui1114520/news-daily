@@ -15,12 +15,7 @@
     ]
   },
   "regions": {
-    "north_america": [
-      "google",
-      "articles",
-      "href",
-      "https"
-    ],
+    "north_america": [],
     "south_asia": [
       "news",
       "xinhua",
@@ -32,7 +27,14 @@
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
-    "sea_oceania": []
+    "sea_oceania": [
+      "href",
+      "https"
+    ],
+    "central_asia": [
+      "google",
+      "articles"
+    ]
   },
   "updated": "2026-06-27"
 }
