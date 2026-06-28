@@ -15,7 +15,11 @@
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "china",
+      "world",
+      "nbsp"
+    ],
     "south_asia": [
       "news",
       "xinhua",
