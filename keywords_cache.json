@@ -9,19 +9,15 @@
       "news"
     ],
     "tech": [
-      "news",
-      "xinhua",
-      "english"
+      "news"
     ]
   },
   "regions": {
     "north_america": [],
-    "south_asia": [
-      "news",
-      "xinhua",
-      "english"
+    "south_asia": [],
+    "middle_east": [
+      "news"
     ],
-    "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
