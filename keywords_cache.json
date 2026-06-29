@@ -6,8 +6,7 @@
       "https",
       "google",
       "articles",
-      "news",
-      "cnbc"
+      "news"
     ],
     "tech": [
       "news",
@@ -20,8 +19,7 @@
     "south_asia": [
       "news",
       "xinhua",
-      "english",
-      "china"
+      "english"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -34,8 +32,7 @@
       "https",
       "news",
       "google",
-      "articles",
-      "cnbc"
+      "articles"
     ],
     "central_asia": [
       "google",
