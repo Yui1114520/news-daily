@@ -6,7 +6,8 @@
       "https",
       "google",
       "articles",
-      "news"
+      "news",
+      "cnbc"
     ],
     "tech": [
       "news",
@@ -30,12 +31,16 @@
     "west_europe": [],
     "sea_oceania": [
       "href",
-      "https"
+      "https",
+      "news",
+      "google",
+      "articles",
+      "cnbc"
     ],
     "central_asia": [
       "google",
       "articles"
     ]
   },
-  "updated": "2026-06-28"
+  "updated": "2026-06-29"
 }
