@@ -14,11 +14,7 @@
     ]
   },
   "regions": {
-    "north_america": [
-      "china",
-      "world",
-      "nbsp"
-    ],
+    "north_america": [],
     "south_asia": [
       "gojek"
     ],
@@ -27,7 +23,9 @@
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "world"
+    ],
     "sea_oceania": [
       "href",
       "https",
