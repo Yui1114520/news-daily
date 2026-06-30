@@ -6,18 +6,23 @@
       "https",
       "google",
       "articles",
-      "news"
+      "news",
+      "gojek"
     ],
     "tech": [
       "news"
     ]
   },
   "regions": {
-    "north_america": [],
-    "south_asia": [],
-    "middle_east": [
-      "news"
+    "north_america": [
+      "china",
+      "world",
+      "nbsp"
     ],
+    "south_asia": [
+      "gojek"
+    ],
+    "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
@@ -35,5 +40,5 @@
       "articles"
     ]
   },
-  "updated": "2026-06-29"
+  "updated": "2026-06-30"
 }
