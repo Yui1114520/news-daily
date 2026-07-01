@@ -1,13 +1,14 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "bangchak"
+    ],
     "livelihood": [
       "href",
       "https",
       "google",
       "articles",
-      "news",
-      "gojek"
+      "news"
     ],
     "tech": [
       "news"
@@ -15,16 +16,16 @@
   },
   "regions": {
     "north_america": [],
-    "south_asia": [
-      "gojek"
-    ],
+    "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [
-      "world"
+      "world",
+      "china",
+      "nbsp"
     ],
     "sea_oceania": [
       "href",
@@ -38,5 +39,5 @@
       "articles"
     ]
   },
-  "updated": "2026-06-30"
+  "updated": "2026-07-01"
 }
