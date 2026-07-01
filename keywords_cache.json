@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "bangchak"
-    ],
+    "diplomacy": [],
     "livelihood": [
       "href",
       "https",
@@ -23,9 +21,7 @@
     "east_europe": [],
     "latin_america": [],
     "west_europe": [
-      "world",
-      "china",
-      "nbsp"
+      "world"
     ],
     "sea_oceania": [
       "href",
