@@ -8,7 +8,8 @@
       "articles",
       "news"
     ],
-    "tech": [
+    "tech": [],
+    "geopolitics": [
       "news"
     ]
   },
@@ -35,5 +36,5 @@
       "articles"
     ]
   },
-  "updated": "2026-07-01"
+  "updated": "2026-07-02"
 }
