@@ -14,7 +14,9 @@
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "unitree"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -34,5 +36,5 @@
       "articles"
     ]
   },
-  "updated": "2026-07-02"
+  "updated": "2026-07-03"
 }
