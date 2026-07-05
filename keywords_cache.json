@@ -7,9 +7,7 @@
   },
   "regions": {
     "north_america": [
-      "href",
       "https",
-      "news",
       "google",
       "articles"
     ],
@@ -18,7 +16,9 @@
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [],
+    "latin_america": [
+      "news"
+    ],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
