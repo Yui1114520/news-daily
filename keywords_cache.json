@@ -9,19 +9,22 @@
     "north_america": [
       "https",
       "google",
-      "articles"
+      "articles",
+      "href",
+      "news",
+      "carlos"
     ],
-    "south_asia": [],
+    "south_asia": [
+      "news"
+    ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [
-      "news"
-    ],
+    "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-05"
+  "updated": "2026-07-06"
 }
