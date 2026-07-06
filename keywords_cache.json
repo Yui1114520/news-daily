@@ -11,17 +11,16 @@
       "google",
       "articles",
       "href",
-      "news",
-      "carlos"
-    ],
-    "south_asia": [
       "news"
     ],
+    "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [],
+    "latin_america": [
+      "news"
+    ],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
