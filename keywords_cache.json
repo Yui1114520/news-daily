@@ -1,6 +1,12 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": []
@@ -11,16 +17,15 @@
       "google",
       "articles",
       "href",
-      "news"
+      "news",
+      "carlos"
     ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [
-      "news"
-    ],
+    "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
