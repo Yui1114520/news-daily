@@ -5,7 +5,9 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "xinhua",
+      "english"
     ],
     "livelihood": [],
     "tech": [],
@@ -16,13 +18,14 @@
       "https",
       "google",
       "articles",
-      "href",
-      "news"
+      "href"
     ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [],
+    "sub_sahara": [
+      "news"
+    ],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
