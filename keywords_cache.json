@@ -2,8 +2,10 @@
   "domains": {
     "diplomacy": [
       "news",
-      "xinhua",
-      "english"
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "livelihood": [],
     "tech": [],
