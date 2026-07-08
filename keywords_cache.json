@@ -1,11 +1,7 @@
 {
   "domains": {
     "diplomacy": [
-      "href",
-      "https",
       "news",
-      "google",
-      "articles",
       "xinhua",
       "english"
     ],
@@ -14,12 +10,7 @@
     "geopolitics": []
   },
   "regions": {
-    "north_america": [
-      "https",
-      "google",
-      "articles",
-      "href"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
