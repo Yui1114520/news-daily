@@ -1,7 +1,6 @@
 {
   "domains": {
     "diplomacy": [
-      "news",
       "href",
       "https",
       "google",
@@ -9,7 +8,10 @@
     ],
     "livelihood": [],
     "tech": [],
-    "geopolitics": []
+    "geopolitics": [],
+    "ecology": [
+      "news"
+    ]
   },
   "regions": {
     "north_america": [],
@@ -19,7 +21,9 @@
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [
-      "news"
+      "news",
+      "xinhua",
+      "english"
     ],
     "west_europe": [],
     "sea_oceania": [],
