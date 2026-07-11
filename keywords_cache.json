@@ -14,7 +14,9 @@
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "openai"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
