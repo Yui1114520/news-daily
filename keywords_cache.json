@@ -14,7 +14,13 @@
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
