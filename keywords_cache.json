@@ -2,11 +2,11 @@
   "domains": {
     "diplomacy": [],
     "livelihood": [],
-    "tech": [],
-    "geopolitics": [],
-    "ecology": [
+    "tech": [
       "news"
-    ]
+    ],
+    "geopolitics": [],
+    "ecology": []
   },
   "regions": {
     "north_america": [],
