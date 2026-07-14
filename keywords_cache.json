@@ -11,7 +11,8 @@
       "news",
       "https",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "ecology": []
   },
@@ -24,13 +25,14 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
-    "east_asia": [],
-    "sub_sahara": [],
-    "east_europe": [
+    "east_asia": [
       "news"
     ],
+    "sub_sahara": [],
+    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
