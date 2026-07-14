@@ -3,13 +3,22 @@
     "diplomacy": [],
     "livelihood": [],
     "tech": [
-      "news"
+      "news",
+      "english",
+      "xinhua"
     ],
-    "geopolitics": [],
+    "geopolitics": [
+      "news",
+      "https",
+      "google",
+      "articles"
+    ],
     "ecology": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "viktor"
+    ],
     "south_asia": [],
     "middle_east": [
       "https",
@@ -19,10 +28,10 @@
     ],
     "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [],
-    "latin_america": [
+    "east_europe": [
       "news"
     ],
+    "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
