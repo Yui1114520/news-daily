@@ -11,18 +11,21 @@
   "regions": {
     "north_america": [],
     "south_asia": [],
-    "middle_east": [],
+    "middle_east": [
+      "https",
+      "news",
+      "google",
+      "articles"
+    ],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [
-      "news",
-      "xinhua",
-      "english"
+      "news"
     ],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-13"
+  "updated": "2026-07-14"
 }
