@@ -17,10 +17,10 @@
     "ecology": []
   },
   "regions": {
-    "north_america": [
-      "viktor"
+    "north_america": [],
+    "south_asia": [
+      "news"
     ],
-    "south_asia": [],
     "middle_east": [
       "https",
       "news",
@@ -28,9 +28,7 @@
       "articles",
       "href"
     ],
-    "east_asia": [
-      "news"
-    ],
+    "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
@@ -38,5 +36,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-14"
+  "updated": "2026-07-15"
 }
