@@ -2,11 +2,7 @@
   "domains": {
     "diplomacy": [],
     "livelihood": [],
-    "tech": [
-      "news",
-      "english",
-      "xinhua"
-    ],
+    "tech": [],
     "geopolitics": [
       "news",
       "https",
@@ -18,9 +14,7 @@
   },
   "regions": {
     "north_america": [],
-    "south_asia": [
-      "news"
-    ],
+    "south_asia": [],
     "middle_east": [
       "https",
       "news",
