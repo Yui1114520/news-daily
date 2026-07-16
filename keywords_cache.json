@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "thanh"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -22,7 +20,10 @@
       "news",
       "google",
       "articles",
-      "href"
+      "href",
+      "lidl",
+      "xinhua",
+      "english"
     ],
     "east_asia": [],
     "sub_sahara": [],
@@ -32,5 +33,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-15"
+  "updated": "2026-07-16"
 }
