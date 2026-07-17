@@ -1,9 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "pete",
-      "hegseth"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -16,11 +13,7 @@
     "ecology": []
   },
   "regions": {
-    "north_america": [
-      "silica",
-      "pete",
-      "hegseth"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [
       "https",
