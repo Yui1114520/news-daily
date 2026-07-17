@@ -20,7 +20,8 @@
       "news",
       "google",
       "articles",
-      "href"
+      "href",
+      "lidl"
     ],
     "east_asia": [],
     "sub_sahara": [],
@@ -30,5 +31,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-16"
+  "updated": "2026-07-17"
 }
