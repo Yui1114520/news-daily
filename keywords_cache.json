@@ -14,7 +14,8 @@
   },
   "regions": {
     "north_america": [
-      "bridge"
+      "leon",
+      "black"
     ],
     "south_asia": [
       "wangchuk"
@@ -24,7 +25,8 @@
       "news",
       "google",
       "articles",
-      "href"
+      "href",
+      "world"
     ],
     "east_asia": [],
     "sub_sahara": [],
