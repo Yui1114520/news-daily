@@ -13,8 +13,12 @@
     "ecology": []
   },
   "regions": {
-    "north_america": [],
-    "south_asia": [],
+    "north_america": [
+      "bridge"
+    ],
+    "south_asia": [
+      "wangchuk"
+    ],
     "middle_east": [
       "https",
       "news",
