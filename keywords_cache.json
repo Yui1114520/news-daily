@@ -8,25 +8,26 @@
       "https",
       "google",
       "articles",
-      "href"
+      "href",
+      "xinhua",
+      "english"
     ],
     "ecology": []
   },
   "regions": {
-    "north_america": [
-      "leon",
-      "black"
-    ],
-    "south_asia": [
-      "wangchuk"
-    ],
+    "north_america": [],
+    "south_asia": [],
     "middle_east": [
       "https",
       "news",
       "google",
       "articles",
       "href",
-      "world"
+      "world",
+      "lidl",
+      "over",
+      "xinhua",
+      "english"
     ],
     "east_asia": [],
     "sub_sahara": [],
@@ -36,5 +37,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-18"
+  "updated": "2026-07-19"
 }
