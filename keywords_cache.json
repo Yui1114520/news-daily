@@ -8,9 +8,7 @@
       "https",
       "google",
       "articles",
-      "href",
-      "xinhua",
-      "english"
+      "href"
     ],
     "ecology": []
   },
@@ -24,10 +22,7 @@
       "articles",
       "href",
       "world",
-      "lidl",
-      "over",
-      "xinhua",
-      "english"
+      "over"
     ],
     "east_asia": [],
     "sub_sahara": [],
