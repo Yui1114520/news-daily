@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "faishal"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -30,5 +32,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-19"
+  "updated": "2026-07-20"
 }
