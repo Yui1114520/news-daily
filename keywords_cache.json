@@ -13,7 +13,12 @@
     "ecology": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "mayo",
+      "ismael",
+      "zambada",
+      "widdecombe"
+    ],
     "south_asia": [],
     "middle_east": [
       "https",
