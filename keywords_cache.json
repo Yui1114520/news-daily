@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "nordone"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -13,15 +11,10 @@
       "href"
     ],
     "ecology": [],
-    "social_movement": [
-      "widdecombe"
-    ]
+    "social_movement": []
   },
   "regions": {
-    "north_america": [
-      "nordone",
-      "widdecombe"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [
       "https",
