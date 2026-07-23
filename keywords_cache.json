@@ -8,7 +8,9 @@
       "https",
       "google",
       "articles",
-      "href"
+      "href",
+      "xinhua",
+      "english"
     ],
     "ecology": [],
     "social_movement": []
@@ -18,12 +20,13 @@
     "south_asia": [],
     "middle_east": [
       "https",
-      "news",
       "google",
-      "articles",
+      "articles"
+    ],
+    "east_asia": [
+      "news",
       "href"
     ],
-    "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
@@ -31,5 +34,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-22"
+  "updated": "2026-07-23"
 }
