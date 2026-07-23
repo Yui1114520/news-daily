@@ -8,9 +8,7 @@
       "https",
       "google",
       "articles",
-      "href",
-      "xinhua",
-      "english"
+      "href"
     ],
     "ecology": [],
     "social_movement": []
@@ -21,7 +19,9 @@
     "middle_east": [
       "https",
       "google",
-      "articles"
+      "articles",
+      "href",
+      "news"
     ],
     "east_asia": [
       "news",
