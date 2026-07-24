@@ -9,7 +9,8 @@
       "google",
       "articles",
       "xinhua",
-      "english"
+      "english",
+      "href"
     ],
     "ecology": [],
     "social_movement": []
@@ -28,7 +29,8 @@
       "https",
       "google",
       "articles",
-      "news"
+      "news",
+      "href"
     ],
     "sea_oceania": [],
     "central_asia": []
