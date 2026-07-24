@@ -7,8 +7,7 @@
       "news",
       "https",
       "google",
-      "articles",
-      "href"
+      "articles"
     ],
     "ecology": [],
     "social_movement": []
@@ -16,22 +15,21 @@
   "regions": {
     "north_america": [],
     "south_asia": [],
-    "middle_east": [
-      "https",
-      "google",
-      "articles",
-      "href",
-      "news"
-    ],
+    "middle_east": [],
     "east_asia": [
       "news"
     ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "https",
+      "google",
+      "articles",
+      "news"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-23"
+  "updated": "2026-07-24"
 }
