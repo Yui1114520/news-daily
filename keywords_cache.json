@@ -19,9 +19,7 @@
     "north_america": [],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [
-      "news"
-    ],
+    "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
@@ -35,5 +33,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-24"
+  "updated": "2026-07-25"
 }
