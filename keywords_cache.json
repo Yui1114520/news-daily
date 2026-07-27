@@ -24,10 +24,11 @@
       "https",
       "google",
       "articles",
-      "news"
+      "news",
+      "href"
     ],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-26"
+  "updated": "2026-07-27"
 }
