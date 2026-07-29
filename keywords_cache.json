@@ -11,11 +11,16 @@
       "href"
     ],
     "ecology": [],
-    "social_movement": []
+    "social_movement": [],
+    "security": [
+      "clayton",
+      "jara"
+    ]
   },
   "regions": {
     "north_america": [
-      "jara"
+      "jara",
+      "clayton"
     ],
     "south_asia": [],
     "middle_east": [],
