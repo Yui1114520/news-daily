@@ -14,7 +14,9 @@
     "social_movement": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "jara"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -31,5 +33,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-28"
+  "updated": "2026-07-29"
 }
