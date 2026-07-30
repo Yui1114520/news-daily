@@ -4,10 +4,7 @@
     "livelihood": [],
     "tech": [],
     "geopolitics": [
-      "news",
       "https",
-      "google",
-      "articles",
       "href"
     ],
     "ecology": [],
@@ -18,8 +15,7 @@
   },
   "regions": {
     "north_america": [
-      "jara",
-      "hansard"
+      "jara"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -29,9 +25,6 @@
     "latin_america": [],
     "west_europe": [
       "https",
-      "google",
-      "articles",
-      "news",
       "href"
     ],
     "sea_oceania": [],
