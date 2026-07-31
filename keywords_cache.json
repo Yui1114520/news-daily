@@ -9,11 +9,13 @@
     ],
     "ecology": [],
     "social_movement": [],
-    "security": []
+    "security": [
+      "jara"
+    ]
   },
   "regions": {
     "north_america": [
-      "zoox"
+      "jara"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -28,5 +30,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-30"
+  "updated": "2026-07-31"
 }
