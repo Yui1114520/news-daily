@@ -21,12 +21,12 @@
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [],
-    "latin_america": [],
-    "west_europe": [
+    "east_europe": [
       "https",
       "href"
     ],
+    "latin_america": [],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
