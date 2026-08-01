@@ -1,7 +1,12 @@
 {
   "domains": {
-    "diplomacy": [],
-    "livelihood": [],
+    "diplomacy": [
+      "nirmal",
+      "purja"
+    ],
+    "livelihood": [
+      "bunny"
+    ],
     "tech": [],
     "geopolitics": [],
     "ecology": [],
@@ -9,7 +14,9 @@
     "security": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "bunny"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
