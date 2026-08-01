@@ -3,28 +3,25 @@
     "diplomacy": [],
     "livelihood": [],
     "tech": [],
-    "geopolitics": [
-      "https",
-      "href"
-    ],
+    "geopolitics": [],
     "ecology": [],
     "social_movement": [],
     "security": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "nancy",
+      "guthrie"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [
-      "https",
-      "href"
-    ],
+    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-07-31"
+  "updated": "2026-08-01"
 }
