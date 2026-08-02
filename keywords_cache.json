@@ -1,6 +1,10 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "xinhua",
+      "english",
+      "news"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -12,11 +16,12 @@
     "north_america": [
       "href",
       "https",
-      "news",
       "google",
       "articles"
     ],
-    "south_asia": [],
+    "south_asia": [
+      "news"
+    ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
