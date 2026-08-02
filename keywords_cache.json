@@ -1,12 +1,7 @@
 {
   "domains": {
-    "diplomacy": [
-      "nirmal",
-      "purja"
-    ],
-    "livelihood": [
-      "bunny"
-    ],
+    "diplomacy": [],
+    "livelihood": [],
     "tech": [],
     "geopolitics": [],
     "ecology": [],
@@ -15,7 +10,11 @@
   },
   "regions": {
     "north_america": [
-      "bunny"
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -27,5 +26,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-01"
+  "updated": "2026-08-02"
 }
