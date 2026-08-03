@@ -16,7 +16,8 @@
     "north_america": [
       "https",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "south_asia": [
       "news"
