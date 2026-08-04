@@ -16,18 +16,16 @@
     ]
   },
   "regions": {
-    "north_america": [
-      "https",
-      "google",
-      "articles"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [
       "news",
       "xinhua",
       "english",
-      "china",
-      "href"
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "east_asia": [],
     "sub_sahara": [],
