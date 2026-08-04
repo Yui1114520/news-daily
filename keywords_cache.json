@@ -8,7 +8,11 @@
     "social_movement": [],
     "security": [],
     "economy": [
-      "news"
+      "news",
+      "https",
+      "google",
+      "articles",
+      "href"
     ]
   },
   "regions": {
@@ -19,14 +23,16 @@
     ],
     "south_asia": [],
     "middle_east": [
-      "news"
+      "news",
+      "xinhua",
+      "english",
+      "china",
+      "href"
     ],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [
-      "href"
-    ],
+    "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
