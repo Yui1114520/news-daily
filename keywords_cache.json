@@ -1,35 +1,35 @@
 {
   "domains": {
-    "diplomacy": [
-      "xinhua",
-      "english",
-      "news"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
     "ecology": [],
     "social_movement": [],
-    "security": []
+    "security": [],
+    "economy": [
+      "news"
+    ]
   },
   "regions": {
     "north_america": [
       "https",
       "google",
-      "articles",
-      "href"
+      "articles"
     ],
-    "south_asia": [
+    "south_asia": [],
+    "middle_east": [
       "news"
     ],
-    "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [],
+    "latin_america": [
+      "href"
+    ],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-03"
+  "updated": "2026-08-04"
 }
