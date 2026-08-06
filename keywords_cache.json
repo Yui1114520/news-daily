@@ -1,26 +1,22 @@
 {
   "domains": {
-    "diplomacy": [
-      "aipac"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
-    "ecology": [],
-    "social_movement": [],
-    "security": [],
-    "economy": [
+    "ecology": [
       "news",
       "https",
       "google",
       "articles",
       "href"
-    ]
+    ],
+    "social_movement": [],
+    "security": [],
+    "economy": []
   },
   "regions": {
-    "north_america": [
-      "aipac"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [
       "news",
