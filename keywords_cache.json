@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "aipac"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -16,7 +18,9 @@
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "aipac"
+    ],
     "south_asia": [],
     "middle_east": [
       "news",
@@ -33,5 +37,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-05"
+  "updated": "2026-08-06"
 }
