@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "palantir"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -23,7 +25,10 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "china",
+      "xinhua",
+      "english"
     ],
     "east_asia": [],
     "sub_sahara": [],
