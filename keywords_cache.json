@@ -8,8 +8,7 @@
       "news",
       "https",
       "google",
-      "articles",
-      "href"
+      "articles"
     ],
     "social_movement": [],
     "security": [],
@@ -20,16 +19,19 @@
     "south_asia": [],
     "middle_east": [
       "news",
-      "href",
-      "https",
-      "google",
-      "articles"
+      "xinhua",
+      "english",
+      "china"
     ],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "https",
+      "google",
+      "articles"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
