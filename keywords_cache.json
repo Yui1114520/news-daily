@@ -5,10 +5,7 @@
     "tech": [],
     "geopolitics": [],
     "ecology": [
-      "news",
       "https",
-      "google",
-      "articles",
       "href"
     ],
     "social_movement": [],
@@ -25,13 +22,10 @@
     "latin_america": [],
     "west_europe": [
       "https",
-      "google",
-      "articles",
-      "href",
-      "news"
+      "href"
     ],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-08"
+  "updated": "2026-08-09"
 }
