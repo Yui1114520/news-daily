@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "xinhua",
+      "english"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -13,7 +16,10 @@
     "economy": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "moore",
+      "threads"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -22,7 +28,10 @@
     "latin_america": [],
     "west_europe": [
       "https",
-      "href"
+      "href",
+      "news",
+      "google",
+      "articles"
     ],
     "sea_oceania": [],
     "central_asia": []
