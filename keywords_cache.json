@@ -16,10 +16,7 @@
     "economy": []
   },
   "regions": {
-    "north_america": [
-      "moore",
-      "threads"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
