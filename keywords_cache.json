@@ -19,7 +19,10 @@
     "economy": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "david",
+      "owori"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -31,7 +34,9 @@
       "news",
       "google",
       "articles",
-      "href"
+      "href",
+      "xinhua",
+      "english"
     ],
     "sea_oceania": [],
     "central_asia": []
