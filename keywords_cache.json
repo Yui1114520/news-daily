@@ -8,7 +8,11 @@
     "tech": [],
     "geopolitics": [],
     "ecology": [
-      "https"
+      "https",
+      "href",
+      "news",
+      "google",
+      "articles"
     ],
     "social_movement": [],
     "security": [],
@@ -26,7 +30,8 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "sea_oceania": [],
     "central_asia": []
