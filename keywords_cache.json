@@ -20,7 +20,11 @@
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "facebook",
+      "meta",
+      "manus"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
