@@ -1,9 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "xinhua",
-      "english"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -16,13 +13,14 @@
     ],
     "social_movement": [],
     "security": [],
-    "economy": []
+    "economy": [],
+    "culture": [
+      "xinhua",
+      "english"
+    ]
   },
   "regions": {
-    "north_america": [
-      "david",
-      "owori"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -41,5 +39,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-10"
+  "updated": "2026-08-11"
 }
