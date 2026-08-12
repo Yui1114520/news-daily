@@ -4,26 +4,16 @@
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
-    "ecology": [
-      "https",
-      "href",
-      "news",
-      "google",
-      "articles"
-    ],
+    "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
-    "culture": [
-      "xinhua",
-      "english"
-    ]
+    "culture": []
   },
   "regions": {
     "north_america": [
-      "facebook",
-      "meta",
-      "manus"
+      "david",
+      "owori"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -31,17 +21,9 @@
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [
-      "https",
-      "news",
-      "google",
-      "articles",
-      "href",
-      "xinhua",
-      "english"
-    ],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-11"
+  "updated": "2026-08-12"
 }
