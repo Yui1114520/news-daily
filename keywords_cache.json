@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "trader"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -11,10 +13,7 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
-      "david",
-      "owori"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
