@@ -1,6 +1,10 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "news",
+      "xinhua",
+      "english"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
