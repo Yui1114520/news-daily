@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "trader"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -13,7 +11,10 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "hakainde",
+      "hichilema"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -24,5 +25,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-12"
+  "updated": "2026-08-13"
 }
