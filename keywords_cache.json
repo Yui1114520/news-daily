@@ -2,9 +2,6 @@
   "domains": {
     "diplomacy": [
       "news",
-      "xinhua",
-      "english",
-      "href",
       "https",
       "google",
       "articles"
@@ -13,7 +10,10 @@
     "tech": [],
     "geopolitics": [],
     "ecology": [],
-    "social_movement": [],
+    "social_movement": [
+      "hakainde",
+      "hichilema"
+    ],
     "security": [
       "kevin",
       "rideout"
