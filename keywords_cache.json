@@ -3,21 +3,30 @@
     "diplomacy": [
       "news",
       "xinhua",
-      "english"
+      "english",
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
     "ecology": [],
     "social_movement": [],
-    "security": [],
+    "security": [
+      "kevin",
+      "rideout"
+    ],
     "economy": [],
     "culture": []
   },
   "regions": {
     "north_america": [
       "hakainde",
-      "hichilema"
+      "hichilema",
+      "kevin",
+      "rideout"
     ],
     "south_asia": [],
     "middle_east": [],
