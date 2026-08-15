@@ -10,10 +10,7 @@
     "tech": [],
     "geopolitics": [],
     "ecology": [],
-    "social_movement": [
-      "hakainde",
-      "hichilema"
-    ],
+    "social_movement": [],
     "security": [
       "kevin",
       "rideout"
@@ -23,8 +20,6 @@
   },
   "regions": {
     "north_america": [
-      "hakainde",
-      "hichilema",
       "kevin",
       "rideout"
     ],
