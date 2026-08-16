@@ -1,16 +1,19 @@
 {
   "domains": {
     "diplomacy": [
+      "dave",
+      "brat"
+    ],
+    "livelihood": [],
+    "tech": [],
+    "geopolitics": [],
+    "ecology": [
       "news",
       "https",
       "google",
       "articles",
       "href"
     ],
-    "livelihood": [],
-    "tech": [],
-    "geopolitics": [],
-    "ecology": [],
     "social_movement": [],
     "security": [
       "kevin",
@@ -22,7 +25,14 @@
   "regions": {
     "north_america": [
       "kevin",
-      "rideout"
+      "rideout",
+      "news",
+      "href",
+      "https",
+      "google",
+      "articles",
+      "dave",
+      "brat"
     ],
     "south_asia": [],
     "middle_east": [],
