@@ -1,9 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "dave",
-      "brat"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -30,9 +27,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "dave",
-      "brat"
+      "articles"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -44,5 +39,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-16"
+  "updated": "2026-08-17"
 }
