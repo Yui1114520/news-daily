@@ -22,22 +22,24 @@
   "regions": {
     "north_america": [
       "kevin",
-      "rideout",
-      "news",
-      "href",
-      "https",
-      "google",
-      "articles"
+      "rideout"
     ],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [],
+    "east_asia": [
+      "href"
+    ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
-    "central_asia": []
+    "central_asia": [
+      "news",
+      "https",
+      "google",
+      "articles"
+    ]
   },
   "updated": "2026-08-17"
 }
