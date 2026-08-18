@@ -22,7 +22,8 @@
   "regions": {
     "north_america": [
       "kevin",
-      "rideout"
+      "rideout",
+      "glasswing"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -40,5 +41,5 @@
       "href"
     ]
   },
-  "updated": "2026-08-17"
+  "updated": "2026-08-18"
 }
