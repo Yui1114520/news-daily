@@ -17,7 +17,9 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "ataya"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -34,5 +36,5 @@
       "href"
     ]
   },
-  "updated": "2026-08-19"
+  "updated": "2026-08-20"
 }
