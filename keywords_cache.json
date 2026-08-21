@@ -5,7 +5,10 @@
     "tech": [],
     "geopolitics": [
       "https",
-      "href"
+      "href",
+      "news",
+      "google",
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -21,7 +24,10 @@
     "sub_sahara": [],
     "east_europe": [
       "https",
-      "href"
+      "href",
+      "news",
+      "google",
+      "articles"
     ],
     "latin_america": [],
     "west_europe": [],
