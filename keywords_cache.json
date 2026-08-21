@@ -3,14 +3,11 @@
     "diplomacy": [],
     "livelihood": [],
     "tech": [],
-    "geopolitics": [],
-    "ecology": [
-      "news",
+    "geopolitics": [
       "https",
-      "google",
-      "articles",
       "href"
     ],
+    "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
@@ -22,17 +19,14 @@
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [],
+    "east_europe": [
+      "https",
+      "href"
+    ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
-    "central_asia": [
-      "news",
-      "https",
-      "google",
-      "articles",
-      "href"
-    ]
+    "central_asia": []
   },
-  "updated": "2026-08-20"
+  "updated": "2026-08-21"
 }
