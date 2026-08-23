@@ -8,9 +8,7 @@
       "href",
       "news",
       "google",
-      "articles",
-      "english",
-      "xinhua"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -29,13 +27,12 @@
       "href",
       "news",
       "google",
-      "articles",
-      "english",
-      "world",
-      "xinhua"
+      "articles"
     ],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "world"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
