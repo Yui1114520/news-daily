@@ -8,7 +8,8 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -27,16 +28,12 @@
       "href",
       "news",
       "google",
-      "articles",
-      "volodymyr",
-      "zelensky"
+      "articles"
     ],
     "latin_america": [],
-    "west_europe": [
-      "world"
-    ],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-23"
+  "updated": "2026-08-24"
 }
