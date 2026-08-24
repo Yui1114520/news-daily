@@ -8,8 +8,7 @@
       "href",
       "news",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -18,7 +17,9 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "lindsay"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
