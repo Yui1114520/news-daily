@@ -5,10 +5,7 @@
     "tech": [],
     "geopolitics": [
       "https",
-      "href",
-      "news",
-      "google",
-      "articles"
+      "href"
     ],
     "ecology": [],
     "social_movement": [],
@@ -17,24 +14,19 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
-      "lindsay"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [
       "https",
-      "href",
-      "news",
-      "google",
-      "articles"
+      "href"
     ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-24"
+  "updated": "2026-08-25"
 }
