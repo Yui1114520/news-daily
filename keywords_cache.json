@@ -11,24 +11,31 @@
     ],
     "ecology": [],
     "social_movement": [],
-    "security": [],
+    "security": [
+      "lindsay"
+    ],
     "economy": [],
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "lindsay"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [
       "https",
-      "href"
+      "href",
+      "news",
+      "google",
+      "articles"
     ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-25"
+  "updated": "2026-08-26"
 }
