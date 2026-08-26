@@ -1,25 +1,34 @@
 {
   "domains": {
     "diplomacy": [
-      "english"
+      "plan",
+      "singapore",
+      "fishing",
+      "sudan",
+      "arms",
+      "embargo"
     ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
       "https",
-      "href"
+      "href",
+      "taiwan",
+      "eswatini",
+      "egypt"
     ],
     "ecology": [],
     "social_movement": [],
-    "security": [
-      "lindsay"
-    ],
+    "security": [],
     "economy": [],
     "culture": []
   },
   "regions": {
     "north_america": [
-      "lindsay"
+      "right",
+      "announces",
+      "israeli",
+      "abelardo"
     ],
     "south_asia": [],
     "middle_east": [],
