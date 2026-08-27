@@ -1,21 +1,16 @@
 {
   "domains": {
     "diplomacy": [
-      "plan",
-      "singapore",
-      "fishing",
-      "sudan",
-      "arms",
-      "embargo"
+      "english"
     ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
       "https",
       "href",
-      "taiwan",
-      "eswatini",
-      "egypt"
+      "news",
+      "google",
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -24,12 +19,7 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
-      "right",
-      "announces",
-      "israeli",
-      "abelardo"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -46,5 +36,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-26"
+  "updated": "2026-08-27"
 }
