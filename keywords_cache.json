@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "nbsp"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -17,7 +19,9 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "nbsp"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -27,7 +31,8 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "latin_america": [],
     "west_europe": [],
