@@ -1,6 +1,12 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "tropical",
+      "storm",
+      "dolly",
+      "downgraded",
+      "islands"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -9,10 +15,12 @@
       "news",
       "google",
       "articles",
-      "satellites",
-      "glacier",
-      "collapse",
-      "strait"
+      "former",
+      "generals",
+      "zhang",
+      "youxia",
+      "zhenli",
+      "military"
     ],
     "ecology": [],
     "social_movement": [],
@@ -22,23 +30,18 @@
   },
   "regions": {
     "north_america": [
-      "warsh",
-      "target",
-      "inflation",
-      "central",
-      "uzbekistan",
-      "jerusalem"
+      "detroit",
+      "trade",
+      "michigan",
+      "recession",
+      "visit",
+      "hindu",
+      "fears"
     ],
     "south_asia": [
       "tibet",
-      "after",
       "flash",
-      "flood",
-      "reach",
-      "floods",
-      "rescuers",
-      "lake",
-      "fears"
+      "flood"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -48,7 +51,9 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "after",
+      "mladic"
     ],
     "latin_america": [],
     "west_europe": [],
