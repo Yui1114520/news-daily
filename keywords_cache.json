@@ -8,7 +8,11 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "satellites",
+      "glacier",
+      "collapse",
+      "strait"
     ],
     "ecology": [],
     "social_movement": [],
@@ -17,8 +21,25 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
-    "south_asia": [],
+    "north_america": [
+      "warsh",
+      "target",
+      "inflation",
+      "central",
+      "uzbekistan",
+      "jerusalem"
+    ],
+    "south_asia": [
+      "tibet",
+      "after",
+      "flash",
+      "flood",
+      "reach",
+      "floods",
+      "rescuers",
+      "lake",
+      "fears"
+    ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
@@ -27,8 +48,7 @@
       "href",
       "news",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "latin_america": [],
     "west_europe": [],
