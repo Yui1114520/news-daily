@@ -1,12 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "tropical",
-      "storm",
-      "dolly",
-      "downgraded",
-      "islands"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -15,12 +9,8 @@
       "news",
       "google",
       "articles",
-      "former",
-      "generals",
-      "zhang",
-      "youxia",
-      "zhenli",
-      "military"
+      "english",
+      "xinhua"
     ],
     "ecology": [],
     "social_movement": [],
@@ -29,19 +19,9 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
-      "detroit",
-      "trade",
-      "michigan",
-      "recession",
-      "visit",
-      "hindu",
-      "fears"
-    ],
+    "north_america": [],
     "south_asia": [
-      "tibet",
-      "flash",
-      "flood"
+      "visit"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -51,14 +31,12 @@
       "href",
       "news",
       "google",
-      "articles",
-      "after",
-      "mladic"
+      "articles"
     ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-28"
+  "updated": "2026-08-29"
 }
