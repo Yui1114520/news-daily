@@ -8,7 +8,9 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "trita",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -17,7 +19,9 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "donald"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -36,5 +40,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-30"
+  "updated": "2026-08-31"
 }
