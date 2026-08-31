@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "delcy"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -8,9 +10,7 @@
       "href",
       "news",
       "google",
-      "articles",
-      "trita",
-      "english"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -19,9 +19,7 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
-      "donald"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -31,9 +29,7 @@
       "href",
       "news",
       "google",
-      "articles",
-      "english",
-      "xinhua"
+      "articles"
     ],
     "latin_america": [],
     "west_europe": [],
