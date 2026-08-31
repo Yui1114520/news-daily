@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "delcy"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -29,7 +27,9 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "english",
+      "xinhua"
     ],
     "latin_america": [],
     "west_europe": [],
