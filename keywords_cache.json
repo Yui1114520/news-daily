@@ -1,12 +1,7 @@
 {
   "domains": {
-    "diplomacy": [
-      "alejandro",
-      "betancourt"
-    ],
-    "livelihood": [
-      "href"
-    ],
+    "diplomacy": [],
+    "livelihood": [],
     "tech": [],
     "geopolitics": [
       "https",
@@ -15,7 +10,8 @@
       "articles",
       "href",
       "pedro",
-      "english"
+      "english",
+      "theguardian"
     ],
     "ecology": [],
     "social_movement": [],
@@ -24,7 +20,9 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "donald"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
