@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "delcy"
+    ],
     "livelihood": [
       "href"
     ],
@@ -9,7 +11,8 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "ecology": [],
     "social_movement": [],
@@ -24,18 +27,21 @@
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [
-      "https",
-      "href"
+      "pedro"
     ],
     "latin_america": [],
     "west_europe": [
       "news",
       "google",
-      "articles"
+      "articles",
+      "https",
+      "href"
     ],
     "sea_oceania": [
       "english",
-      "xinhua"
+      "xinhua",
+      "news",
+      "chinese"
     ],
     "central_asia": []
   },
