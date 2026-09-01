@@ -1,7 +1,8 @@
 {
   "domains": {
     "diplomacy": [
-      "delcy"
+      "alejandro",
+      "betancourt"
     ],
     "livelihood": [
       "href"
@@ -12,7 +13,9 @@
       "news",
       "google",
       "articles",
-      "href"
+      "href",
+      "pedro",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -40,8 +43,7 @@
     "sea_oceania": [
       "english",
       "xinhua",
-      "news",
-      "chinese"
+      "news"
     ],
     "central_asia": []
   },
