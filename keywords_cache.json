@@ -1,11 +1,12 @@
 {
   "domains": {
     "diplomacy": [],
-    "livelihood": [],
+    "livelihood": [
+      "href"
+    ],
     "tech": [],
     "geopolitics": [
       "https",
-      "href",
       "news",
       "google",
       "articles"
@@ -24,17 +25,19 @@
     "sub_sahara": [],
     "east_europe": [
       "https",
-      "href",
+      "href"
+    ],
+    "latin_america": [],
+    "west_europe": [
       "news",
       "google",
-      "articles",
+      "articles"
+    ],
+    "sea_oceania": [
       "english",
       "xinhua"
     ],
-    "latin_america": [],
-    "west_europe": [],
-    "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-08-31"
+  "updated": "2026-09-01"
 }
