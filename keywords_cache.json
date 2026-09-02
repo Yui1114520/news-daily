@@ -20,9 +20,7 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
-      "donald"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -45,5 +43,5 @@
     ],
     "central_asia": []
   },
-  "updated": "2026-09-01"
+  "updated": "2026-09-02"
 }
