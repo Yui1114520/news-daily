@@ -10,7 +10,6 @@
       "articles",
       "href",
       "pedro",
-      "english",
       "theguardian"
     ],
     "ecology": [],
@@ -20,7 +19,9 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "pete"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -36,11 +37,7 @@
       "https",
       "href"
     ],
-    "sea_oceania": [
-      "english",
-      "xinhua",
-      "news"
-    ],
+    "sea_oceania": [],
     "central_asia": []
   },
   "updated": "2026-09-02"
