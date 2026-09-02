@@ -5,9 +5,6 @@
     "tech": [],
     "geopolitics": [
       "https",
-      "news",
-      "google",
-      "articles",
       "href",
       "pedro",
       "theguardian"
@@ -19,24 +16,18 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
-      "pete"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [
-      "pedro"
-    ],
-    "latin_america": [],
-    "west_europe": [
-      "news",
-      "google",
-      "articles",
+      "pedro",
       "https",
       "href"
     ],
+    "latin_america": [],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
