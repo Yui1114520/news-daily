@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "english",
+      "news"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -16,7 +19,10 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "pete",
+      "hegseth"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -31,5 +37,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-02"
+  "updated": "2026-09-03"
 }
