@@ -2,15 +2,15 @@
   "domains": {
     "diplomacy": [
       "english",
-      "news"
+      "news",
+      "giorgia",
+      "meloni"
     ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
       "https",
-      "href",
-      "pedro",
-      "theguardian"
+      "href"
     ],
     "ecology": [],
     "social_movement": [],
@@ -20,15 +20,17 @@
   },
   "regions": {
     "north_america": [
-      "pete",
-      "hegseth"
+      "peter",
+      "gloria",
+      "steinem",
+      "emmanuel",
+      "macron"
     ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [
-      "pedro",
       "https",
       "href"
     ],
