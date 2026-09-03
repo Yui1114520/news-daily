@@ -1,10 +1,7 @@
 {
   "domains": {
     "diplomacy": [
-      "english",
-      "news",
-      "giorgia",
-      "meloni"
+      "maria"
     ],
     "livelihood": [],
     "tech": [],
@@ -21,19 +18,20 @@
   "regions": {
     "north_america": [
       "peter",
-      "gloria",
-      "steinem",
       "emmanuel",
-      "macron"
+      "macron",
+      "andy",
+      "burnham",
+      "maria"
     ],
-    "south_asia": [],
-    "middle_east": [],
-    "east_asia": [],
-    "sub_sahara": [],
-    "east_europe": [
+    "south_asia": [
       "https",
       "href"
     ],
+    "middle_east": [],
+    "east_asia": [],
+    "sub_sahara": [],
+    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
