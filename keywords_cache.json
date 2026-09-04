@@ -7,7 +7,12 @@
     "tech": [],
     "geopolitics": [
       "https",
-      "href"
+      "href",
+      "news",
+      "google",
+      "articles",
+      "javier",
+      "milei"
     ],
     "ecology": [],
     "social_movement": [],
@@ -37,5 +42,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-03"
+  "updated": "2026-09-04"
 }
