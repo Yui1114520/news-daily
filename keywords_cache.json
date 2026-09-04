@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "maria"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -26,8 +24,7 @@
       "emmanuel",
       "macron",
       "andy",
-      "burnham",
-      "maria"
+      "burnham"
     ],
     "south_asia": [
       "https",
