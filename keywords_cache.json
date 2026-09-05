@@ -20,10 +20,7 @@
   },
   "regions": {
     "north_america": [
-      "emmanuel",
-      "macron",
-      "andy",
-      "burnham"
+      "english"
     ],
     "south_asia": [
       "https",
@@ -38,5 +35,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-04"
+  "updated": "2026-09-05"
 }
