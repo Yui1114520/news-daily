@@ -20,7 +20,11 @@
     "culture": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "ayana",
+      "elizabeth",
+      "johnson"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -29,7 +33,14 @@
     ],
     "east_europe": [
       "https",
-      "href"
+      "href",
+      "news",
+      "google",
+      "articles",
+      "steve",
+      "witkoff",
+      "jared",
+      "kushner"
     ],
     "latin_america": [],
     "west_europe": [],
