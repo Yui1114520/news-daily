@@ -10,7 +10,8 @@
       "google",
       "articles",
       "javier",
-      "milei"
+      "milei",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -19,17 +20,17 @@
     "culture": []
   },
   "regions": {
-    "north_america": [
+    "north_america": [],
+    "south_asia": [],
+    "middle_east": [],
+    "east_asia": [],
+    "sub_sahara": [
       "english"
     ],
-    "south_asia": [
+    "east_europe": [
       "https",
       "href"
     ],
-    "middle_east": [],
-    "east_asia": [],
-    "sub_sahara": [],
-    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
