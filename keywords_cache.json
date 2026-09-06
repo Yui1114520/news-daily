@@ -8,14 +8,15 @@
       "href",
       "news",
       "google",
-      "articles",
-      "english",
-      "xinhua"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
     "security": [],
-    "economy": [],
+    "economy": [
+      "english",
+      "xinhua"
+    ],
     "culture": []
   },
   "regions": {
@@ -27,15 +28,14 @@
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [
-      "english"
-    ],
+    "sub_sahara": [],
     "east_europe": [
       "https",
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "latin_america": [],
     "west_europe": [],
