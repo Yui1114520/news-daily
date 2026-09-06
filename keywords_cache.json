@@ -27,15 +27,18 @@
     ],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [],
+    "east_asia": [
+      "https",
+      "href"
+    ],
     "sub_sahara": [],
     "east_europe": [
-      "https",
-      "href",
       "news",
       "google",
       "articles",
-      "english"
+      "english",
+      "chinese",
+      "xinhua"
     ],
     "latin_america": [],
     "west_europe": [],
