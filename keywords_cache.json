@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "five"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -8,7 +10,16 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "trump",
+      "over",
+      "canada",
+      "saudel",
+      "causes",
+      "south",
+      "torrential",
+      "rain",
+      "greenland"
     ],
     "ecology": [],
     "social_movement": [],
@@ -21,7 +32,23 @@
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "australian",
+      "tariffs",
+      "cent",
+      "hundreds",
+      "president",
+      "donald",
+      "apartheid",
+      "south",
+      "surfers",
+      "trial",
+      "suspected",
+      "space",
+      "force",
+      "uniforms",
+      "inspired"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -36,10 +63,18 @@
       "english",
       "xinhua",
       "href",
-      "https"
+      "https",
+      "canada",
+      "greenland"
     ],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "panama",
+      "canal",
+      "nino",
+      "after",
+      "border"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
