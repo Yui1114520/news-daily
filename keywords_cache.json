@@ -13,11 +13,11 @@
     "ecology": [],
     "social_movement": [],
     "security": [],
-    "economy": [
+    "economy": [],
+    "culture": [
       "english",
       "xinhua"
-    ],
-    "culture": []
+    ]
   },
   "regions": {
     "north_america": [
@@ -37,13 +37,14 @@
       "google",
       "articles",
       "english",
-      "chinese",
-      "xinhua"
+      "xinhua",
+      "href",
+      "https"
     ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-06"
+  "updated": "2026-09-07"
 }
