@@ -16,15 +16,12 @@
     "economy": [],
     "culture": [
       "english",
-      "xinhua"
+      "xinhua",
+      "news"
     ]
   },
   "regions": {
-    "north_america": [
-      "ayana",
-      "elizabeth",
-      "johnson"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
