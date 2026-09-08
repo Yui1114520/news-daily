@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "five"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -10,16 +8,7 @@
       "href",
       "news",
       "google",
-      "articles",
-      "trump",
-      "over",
-      "canada",
-      "saudel",
-      "causes",
-      "south",
-      "torrential",
-      "rain",
-      "greenland"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -28,33 +17,16 @@
     "culture": [
       "english",
       "xinhua",
-      "news"
+      "news",
+      "president",
+      "chinese"
     ]
   },
   "regions": {
-    "north_america": [
-      "australian",
-      "tariffs",
-      "cent",
-      "hundreds",
-      "president",
-      "donald",
-      "apartheid",
-      "south",
-      "surfers",
-      "trial",
-      "suspected",
-      "space",
-      "force",
-      "uniforms",
-      "inspired"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [
-      "https",
-      "href"
-    ],
+    "east_asia": [],
     "sub_sahara": [],
     "east_europe": [
       "news",
@@ -64,19 +36,15 @@
       "xinhua",
       "href",
       "https",
-      "canada",
-      "greenland"
+      "president"
     ],
-    "latin_america": [],
-    "west_europe": [
-      "panama",
-      "canal",
-      "nino",
-      "after",
-      "border"
+    "latin_america": [
+      "https",
+      "href"
     ],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-07"
+  "updated": "2026-09-08"
 }
