@@ -1,6 +1,11 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "world",
+      "increase",
+      "million",
+      "singapore"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -8,7 +13,16 @@
       "href",
       "news",
       "google",
-      "articles"
+      "articles",
+      "across",
+      "north",
+      "korea",
+      "road",
+      "bridge",
+      "shared",
+      "boost",
+      "defence",
+      "chinese"
     ],
     "ecology": [],
     "social_movement": [],
@@ -17,15 +31,27 @@
     "culture": [
       "english",
       "xinhua",
-      "news",
-      "president",
-      "chinese"
+      "news"
+    ],
+    "military": [
+      "president"
     ]
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "china",
+      "visit",
+      "elon",
+      "musk",
+      "tesla",
+      "rare",
+      "earth",
+      "motor"
+    ],
     "south_asia": [],
-    "middle_east": [],
+    "middle_east": [
+      "facilities"
+    ],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [
@@ -36,12 +62,10 @@
       "xinhua",
       "href",
       "https",
-      "president"
+      "president",
+      "channel"
     ],
-    "latin_america": [
-      "https",
-      "href"
-    ],
+    "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
