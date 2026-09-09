@@ -18,7 +18,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "nbsp"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -28,7 +30,8 @@
       "google",
       "articles",
       "href",
-      "https"
+      "https",
+      "english"
     ],
     "latin_america": [],
     "west_europe": [],
