@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "samuel"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -21,8 +19,14 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
-    "south_asia": [],
+    "north_america": [
+      "marco",
+      "rubio"
+    ],
+    "south_asia": [
+      "english",
+      "xinhua"
+    ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
@@ -31,9 +35,7 @@
       "google",
       "articles",
       "href",
-      "https",
-      "english",
-      "xinhua"
+      "https"
     ],
     "latin_america": [],
     "west_europe": [],
