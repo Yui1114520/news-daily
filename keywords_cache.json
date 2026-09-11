@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "jean",
+      "chretien"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -19,7 +22,10 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "jean",
+      "chretien"
+    ],
     "south_asia": [
       "english",
       "xinhua"
