@@ -5,7 +5,11 @@
     "tech": [],
     "geopolitics": [
       "news",
-      "english"
+      "english",
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -15,17 +19,15 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "marco",
-      "rubio"
+    "north_america": [],
+    "south_asia": [
+      "english",
+      "xinhua"
     ],
-    "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [
-      "news",
-      "english",
-      "xinhua"
+      "news"
     ],
     "east_europe": [],
     "latin_america": [],
