@@ -1,14 +1,12 @@
 {
   "domains": {
-    "diplomacy": [
-      "jean",
-      "chretien"
-    ],
+    "diplomacy": [],
     "livelihood": [],
-    "tech": [],
+    "tech": [
+      "english"
+    ],
     "geopolitics": [
       "news",
-      "english",
       "href",
       "https",
       "google",
@@ -23,23 +21,31 @@
   },
   "regions": {
     "north_america": [
-      "jean",
-      "chretien"
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
     ],
     "south_asia": [
       "english",
-      "xinhua"
-    ],
-    "middle_east": [],
-    "east_asia": [],
-    "sub_sahara": [
+      "xinhua",
       "news"
     ],
+    "middle_east": [
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
+    ],
+    "east_asia": [],
+    "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-11"
+  "updated": "2026-09-12"
 }
