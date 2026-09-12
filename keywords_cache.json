@@ -1,16 +1,18 @@
 {
   "domains": {
-    "diplomacy": [],
-    "livelihood": [],
-    "tech": [
-      "english"
+    "diplomacy": [
+      "andrew",
+      "frederick"
     ],
+    "livelihood": [],
+    "tech": [],
     "geopolitics": [
       "news",
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -23,24 +25,17 @@
     "north_america": [
       "href",
       "https",
-      "news",
       "google",
       "articles"
     ],
-    "south_asia": [
-      "english",
-      "xinhua",
-      "news"
-    ],
-    "middle_east": [
-      "href",
-      "https",
-      "news",
-      "google",
-      "articles"
-    ],
+    "south_asia": [],
+    "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [],
+    "sub_sahara": [
+      "news",
+      "english",
+      "xinhua"
+    ],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
