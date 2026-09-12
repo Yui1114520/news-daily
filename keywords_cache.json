@@ -23,14 +23,16 @@
   },
   "regions": {
     "north_america": [
+      "farage"
+    ],
+    "south_asia": [],
+    "middle_east": [],
+    "east_asia": [
       "href",
       "https",
       "google",
       "articles"
     ],
-    "south_asia": [],
-    "middle_east": [],
-    "east_asia": [],
     "sub_sahara": [
       "news",
       "english",
