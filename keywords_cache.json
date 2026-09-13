@@ -22,16 +22,15 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "farage"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "news"
     ],
     "sub_sahara": [
       "news",
@@ -44,5 +43,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-12"
+  "updated": "2026-09-13"
 }
