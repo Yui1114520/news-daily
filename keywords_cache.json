@@ -2,7 +2,8 @@
   "domains": {
     "diplomacy": [
       "andrew",
-      "frederick"
+      "frederick",
+      "kamala"
     ],
     "livelihood": [],
     "tech": [],
@@ -22,7 +23,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "kamala"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
