@@ -2,8 +2,7 @@
   "domains": {
     "diplomacy": [
       "andrew",
-      "frederick",
-      "kamala"
+      "frederick"
     ],
     "livelihood": [],
     "tech": [],
@@ -23,9 +22,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "kamala"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -37,8 +34,7 @@
     ],
     "sub_sahara": [
       "news",
-      "english",
-      "xinhua"
+      "english"
     ],
     "east_europe": [],
     "latin_america": [],
@@ -46,5 +42,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-13"
+  "updated": "2026-09-14"
 }
