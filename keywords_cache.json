@@ -11,14 +11,15 @@
       "href",
       "https",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
-    "culture": [],
+    "culture": [
+      "english"
+    ],
     "military": []
   },
   "regions": {
