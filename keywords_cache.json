@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "scott",
+      "bessent"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -8,20 +11,20 @@
       "href",
       "https",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
-    "culture": [
-      "english"
-    ],
+    "culture": [],
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "scott",
+      "bessent"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -31,12 +34,7 @@
       "articles",
       "news"
     ],
-    "sub_sahara": [
-      "english",
-      "xinhua",
-      "news",
-      "china"
-    ],
+    "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
