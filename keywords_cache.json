@@ -11,7 +11,8 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -23,7 +24,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "karl"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -35,7 +38,8 @@
     ],
     "sub_sahara": [
       "news",
-      "english"
+      "english",
+      "xinhua"
     ],
     "east_europe": [],
     "latin_america": [],
@@ -43,5 +47,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-14"
+  "updated": "2026-09-15"
 }
