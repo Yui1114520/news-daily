@@ -18,7 +18,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "nbsp"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
