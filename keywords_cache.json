@@ -1,9 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "scott",
-      "bessent"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -21,10 +18,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "scott",
-      "bessent"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -41,5 +35,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-15"
+  "updated": "2026-09-16"
 }
