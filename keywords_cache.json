@@ -21,7 +21,8 @@
   },
   "regions": {
     "north_america": [
-      "donald"
+      "kristersson",
+      "nbsp"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -35,7 +36,10 @@
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "mark",
+      "carney"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
