@@ -8,7 +8,9 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "english",
+      "xinhua"
     ],
     "ecology": [],
     "social_movement": [],
@@ -18,7 +20,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "donald"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
