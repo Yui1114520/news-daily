@@ -8,9 +8,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "english",
-      "xinhua"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -20,10 +18,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "kristersson",
-      "nbsp"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
