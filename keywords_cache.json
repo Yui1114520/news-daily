@@ -1,16 +1,16 @@
 {
   "domains": {
     "diplomacy": [
-      "xinhua",
-      "english",
       "news"
     ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
       "news",
-      "xinhua",
-      "english"
+      "href",
+      "https",
+      "articles",
+      "google"
     ],
     "ecology": [],
     "social_movement": [],
@@ -20,7 +20,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "osman"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
