@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "news"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -21,7 +19,9 @@
   },
   "regions": {
     "north_america": [
-      "osman"
+      "donald",
+      "isaias",
+      "afwerki"
     ],
     "south_asia": [],
     "middle_east": [],
