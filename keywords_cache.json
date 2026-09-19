@@ -8,7 +8,9 @@
       "href",
       "https",
       "articles",
-      "google"
+      "google",
+      "english",
+      "xinhua"
     ],
     "ecology": [],
     "social_movement": [],
@@ -18,11 +20,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "donald",
-      "isaias",
-      "afwerki"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -35,5 +33,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-18"
+  "updated": "2026-09-19"
 }
