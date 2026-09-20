@@ -8,7 +8,11 @@
       "href",
       "https",
       "articles",
-      "google"
+      "google",
+      "xinhua",
+      "english",
+      "mark",
+      "carney"
     ],
     "ecology": [],
     "social_movement": [],
@@ -18,9 +22,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "osman"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -33,5 +35,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-19"
+  "updated": "2026-09-20"
 }
