@@ -11,14 +11,18 @@
       "google"
     ],
     "ecology": [],
-    "social_movement": [],
+    "social_movement": [
+      "vincent"
+    ],
     "security": [],
     "economy": [],
     "culture": [],
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "vincent"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
