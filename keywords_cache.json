@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "donald",
+      "trump"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -12,7 +15,10 @@
     ],
     "ecology": [],
     "social_movement": [],
-    "security": [],
+    "security": [
+      "english",
+      "news"
+    ],
     "economy": [],
     "culture": [],
     "military": []
