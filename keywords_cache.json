@@ -1,21 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "trump",
-      "white",
-      "house",
-      "politico",
-      "york",
-      "groups",
-      "government",
-      "prime",
-      "minister",
-      "manchester",
-      "host",
-      "world",
-      "after",
-      "china"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -23,18 +8,10 @@
       "href",
       "https",
       "articles",
-      "google",
-      "meet",
-      "military",
-      "ukraine",
-      "burnham",
-      "xinhua",
-      "english"
+      "google"
     ],
     "ecology": [],
-    "social_movement": [
-      "vincent"
-    ],
+    "social_movement": [],
     "security": [],
     "economy": [],
     "culture": [],
@@ -42,21 +19,7 @@
   },
   "regions": {
     "north_america": [
-      "hong",
-      "kong",
-      "white",
-      "house",
-      "president",
-      "infantino",
-      "politico",
-      "lawsuit",
-      "against",
-      "major",
-      "york",
-      "summit",
-      "despite",
-      "student",
-      "residences"
+      "kong"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -66,22 +29,7 @@
     "latin_america": [
       "news"
     ],
-    "west_europe": [
-      "burnham",
-      "after",
-      "over",
-      "andy",
-      "prime",
-      "minister",
-      "first",
-      "xhaka",
-      "under",
-      "covid",
-      "certificate",
-      "vincent",
-      "manchester",
-      "host"
-    ],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
