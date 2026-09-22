@@ -18,17 +18,19 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "kong"
-    ],
+    "north_america": [],
     "south_asia": [],
-    "middle_east": [],
+    "middle_east": [
+      "href",
+      "https",
+      "news",
+      "google",
+      "articles"
+    ],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [
-      "news"
-    ],
+    "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
