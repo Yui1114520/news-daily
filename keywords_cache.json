@@ -2,8 +2,7 @@
   "domains": {
     "diplomacy": [
       "donald",
-      "trump",
-      "nbsp"
+      "trump"
     ],
     "livelihood": [],
     "tech": [],
@@ -23,7 +22,7 @@
   },
   "regions": {
     "north_america": [
-      "nbsp"
+      "donald"
     ],
     "south_asia": [],
     "middle_east": [
