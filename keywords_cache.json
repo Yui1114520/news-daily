@@ -14,10 +14,7 @@
     ],
     "economy": [],
     "culture": [],
-    "military": [
-      "robert",
-      "fico"
-    ]
+    "military": []
   },
   "regions": {
     "north_america": [
@@ -25,7 +22,8 @@
     ],
     "south_asia": [],
     "middle_east": [
-      "news"
+      "news",
+      "english"
     ],
     "east_asia": [],
     "sub_sahara": [],
