@@ -6,19 +6,18 @@
     ],
     "livelihood": [],
     "tech": [],
-    "geopolitics": [
-      "news",
-      "href",
-      "https",
-      "articles",
-      "google"
-    ],
+    "geopolitics": [],
     "ecology": [],
     "social_movement": [],
-    "security": [],
+    "security": [
+      "news"
+    ],
     "economy": [],
     "culture": [],
-    "military": []
+    "military": [
+      "robert",
+      "fico"
+    ]
   },
   "regions": {
     "north_america": [
@@ -26,11 +25,7 @@
     ],
     "south_asia": [],
     "middle_east": [
-      "href",
-      "https",
-      "news",
-      "google",
-      "articles"
+      "news"
     ],
     "east_asia": [],
     "sub_sahara": [],
@@ -40,5 +35,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }
