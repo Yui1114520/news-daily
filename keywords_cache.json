@@ -23,7 +23,10 @@
     "south_asia": [],
     "middle_east": [
       "news",
-      "english"
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "east_asia": [],
     "sub_sahara": [],
