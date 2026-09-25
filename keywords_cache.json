@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "donald"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -16,16 +14,17 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "donald"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [
       "news",
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "chinese",
+      "xinhua",
+      "english"
     ],
     "east_asia": [],
     "sub_sahara": [],
