@@ -1,8 +1,7 @@
 {
   "domains": {
     "diplomacy": [
-      "donald",
-      "trump"
+      "donald"
     ],
     "livelihood": [],
     "tech": [],
@@ -14,10 +13,7 @@
     ],
     "economy": [],
     "culture": [],
-    "military": [
-      "robert",
-      "fico"
-    ]
+    "military": []
   },
   "regions": {
     "north_america": [
@@ -29,8 +25,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "east_asia": [],
     "sub_sahara": [],
