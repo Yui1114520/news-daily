@@ -14,7 +14,10 @@
     ],
     "economy": [],
     "culture": [],
-    "military": []
+    "military": [
+      "robert",
+      "fico"
+    ]
   },
   "regions": {
     "north_america": [
@@ -26,7 +29,8 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "east_asia": [],
     "sub_sahara": [],
@@ -36,5 +40,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }
