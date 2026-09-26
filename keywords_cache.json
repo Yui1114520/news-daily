@@ -3,12 +3,12 @@
     "diplomacy": [],
     "livelihood": [],
     "tech": [],
-    "geopolitics": [],
-    "ecology": [],
-    "social_movement": [],
-    "security": [
+    "geopolitics": [
       "news"
     ],
+    "ecology": [],
+    "social_movement": [],
+    "security": [],
     "economy": [],
     "culture": [],
     "military": []
@@ -23,8 +23,7 @@
       "google",
       "articles",
       "xinhua",
-      "english",
-      "china"
+      "english"
     ],
     "east_asia": [],
     "sub_sahara": [],
