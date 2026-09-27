@@ -14,14 +14,12 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "donald"
+    ],
     "south_asia": [],
     "middle_east": [
-      "news",
-      "href",
-      "https",
-      "google",
-      "articles"
+      "news"
     ],
     "east_asia": [],
     "sub_sahara": [],
@@ -31,5 +29,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-26"
+  "updated": "2026-09-27"
 }
