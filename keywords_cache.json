@@ -4,12 +4,16 @@
     "livelihood": [],
     "tech": [],
     "geopolitics": [
-      "news"
+      "news",
+      "english",
+      "href",
+      "https",
+      "google",
+      "articles",
+      "xinhua"
     ],
     "ecology": [],
-    "social_movement": [
-      "news"
-    ],
+    "social_movement": [],
     "security": [],
     "economy": [],
     "culture": [],
