@@ -7,21 +7,21 @@
       "news"
     ],
     "ecology": [],
-    "social_movement": [],
+    "social_movement": [
+      "news"
+    ],
     "security": [],
     "economy": [],
     "culture": [],
     "military": []
   },
   "regions": {
-    "north_america": [
-      "donald"
-    ],
+    "north_america": [],
     "south_asia": [],
-    "middle_east": [
+    "middle_east": [],
+    "east_asia": [
       "news"
     ],
-    "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
