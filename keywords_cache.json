@@ -22,15 +22,21 @@
   "regions": {
     "north_america": [
       "slinger",
-      "francisco"
+      "francisco",
+      "mighty",
+      "sparrow",
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [
+    "east_asia": [],
+    "sub_sahara": [],
+    "east_europe": [
       "news"
     ],
-    "sub_sahara": [],
-    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
