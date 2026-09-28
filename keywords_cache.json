@@ -1,16 +1,17 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "andrew",
+      "bailey"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
       "news",
-      "english",
       "href",
       "https",
       "google",
-      "articles",
-      "xinhua"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -21,22 +22,19 @@
   },
   "regions": {
     "north_america": [
-      "slinger",
-      "francisco",
-      "mighty",
-      "sparrow",
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "news",
+      "andrew",
+      "bailey"
     ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [
-      "news"
-    ],
+    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
