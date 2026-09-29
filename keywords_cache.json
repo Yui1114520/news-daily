@@ -21,20 +21,23 @@
   },
   "regions": {
     "north_america": [
+      "slinger",
+      "francisco",
+      "lindsay"
+    ],
+    "south_asia": [],
+    "middle_east": [
+      "bardella"
+    ],
+    "east_asia": [
+      "news",
       "href",
       "https",
       "google",
-      "articles",
-      "slinger",
-      "francisco"
+      "articles"
     ],
-    "south_asia": [],
-    "middle_east": [],
-    "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [
-      "news"
-    ],
+    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
