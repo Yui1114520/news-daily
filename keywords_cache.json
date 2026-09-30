@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "andy",
+      "burnham"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
