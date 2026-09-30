@@ -22,13 +22,10 @@
   "regions": {
     "north_america": [
       "slinger",
-      "francisco",
-      "lindsay"
+      "francisco"
     ],
     "south_asia": [],
-    "middle_east": [
-      "bardella"
-    ],
+    "middle_east": [],
     "east_asia": [
       "news",
       "href",
@@ -43,5 +40,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-09-29"
+  "updated": "2026-09-30"
 }
