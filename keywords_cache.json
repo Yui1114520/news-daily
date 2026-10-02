@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "hugo"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -10,8 +8,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
