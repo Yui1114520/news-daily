@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "hugo"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -41,5 +43,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-01"
+  "updated": "2026-10-02"
 }
