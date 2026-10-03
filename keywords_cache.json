@@ -20,7 +20,9 @@
   },
   "regions": {
     "north_america": [
-      "donald"
+      "donald",
+      "renee",
+      "good"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -38,5 +40,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-02"
+  "updated": "2026-10-03"
 }
