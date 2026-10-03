@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "axios"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -20,9 +22,7 @@
   },
   "regions": {
     "north_america": [
-      "donald",
-      "renee",
-      "good"
+      "axios"
     ],
     "south_asia": [],
     "middle_east": [],
