@@ -8,9 +8,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "english",
-      "xinhua"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -37,5 +35,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-03"
+  "updated": "2026-10-04"
 }
