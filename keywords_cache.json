@@ -1,12 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "flydubai",
-      "pilot",
-      "country",
-      "after",
-      "allegations"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -14,31 +8,17 @@
       "href",
       "https",
       "google",
-      "articles",
-      "naval",
-      "xinhua",
-      "english",
-      "presidential"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
     "culture": [],
-    "military": [
-      "bridge",
-      "trump",
-      "iranian"
-    ]
+    "military": []
   },
   "regions": {
-    "north_america": [
-      "brazil",
-      "neck",
-      "president",
-      "after",
-      "allegations"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -46,14 +26,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "wins",
-      "asian",
-      "games",
-      "gold",
-      "secure",
-      "military",
-      "exemption"
+      "articles"
     ],
     "sub_sahara": [],
     "east_europe": [],
