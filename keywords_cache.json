@@ -1,6 +1,11 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "bolsonaro",
+      "luiz",
+      "lula",
+      "silva"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -8,7 +13,8 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -18,7 +24,10 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "flavio",
+      "bolsonaro"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -35,5 +44,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-04"
+  "updated": "2026-10-05"
 }
