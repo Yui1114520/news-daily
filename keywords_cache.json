@@ -1,11 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "bolsonaro",
-      "luiz",
-      "lula",
-      "silva"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -24,10 +19,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "flavio",
-      "bolsonaro"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
