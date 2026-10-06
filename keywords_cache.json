@@ -8,20 +8,19 @@
       "href",
       "https",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "ecology": [],
-    "social_movement": [],
+    "social_movement": [
+      "bolsonaro"
+    ],
     "security": [],
     "economy": [],
     "culture": [],
     "military": []
   },
   "regions": {
-    "north_america": [
-      "donald"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
