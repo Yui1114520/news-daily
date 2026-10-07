@@ -11,17 +11,16 @@
       "articles"
     ],
     "ecology": [],
-    "social_movement": [
-      "bolsonaro",
-      "jair"
-    ],
+    "social_movement": [],
     "security": [],
     "economy": [],
     "culture": [],
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "neogi"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -33,10 +32,7 @@
     ],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [
-      "bolsonaro",
-      "jair"
-    ],
+    "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
