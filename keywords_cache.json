@@ -21,9 +21,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "deepzang"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -35,7 +33,10 @@
     ],
     "sub_sahara": [],
     "east_europe": [],
-    "latin_america": [],
+    "latin_america": [
+      "bolsonaro",
+      "jair"
+    ],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
