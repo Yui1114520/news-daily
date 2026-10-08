@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "spacex"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -18,9 +20,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "neogi"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -37,5 +37,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-07"
+  "updated": "2026-10-08"
 }
