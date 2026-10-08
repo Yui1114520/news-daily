@@ -1,10 +1,16 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "mamdani"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
-      "news"
+      "news",
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -14,11 +20,17 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "mamdani"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
-      "news"
+      "news",
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "sub_sahara": [],
     "east_europe": [],
