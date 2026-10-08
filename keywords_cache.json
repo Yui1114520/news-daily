@@ -1,16 +1,10 @@
 {
   "domains": {
-    "diplomacy": [
-      "spacex"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
-      "news",
-      "href",
-      "https",
-      "google",
-      "articles"
+      "news"
     ],
     "ecology": [],
     "social_movement": [],
@@ -24,11 +18,7 @@
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
-      "news",
-      "href",
-      "https",
-      "google",
-      "articles"
+      "news"
     ],
     "sub_sahara": [],
     "east_europe": [],
