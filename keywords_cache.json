@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "mamdani"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -20,9 +18,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "mamdani"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -33,11 +29,14 @@
       "articles"
     ],
     "sub_sahara": [],
-    "east_europe": [],
+    "east_europe": [
+      "openai",
+      "chatgpt"
+    ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-08"
+  "updated": "2026-10-09"
 }
