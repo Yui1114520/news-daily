@@ -6,7 +6,9 @@
     "geopolitics": [
       "news",
       "href",
-      "https"
+      "https",
+      "google",
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -23,8 +25,8 @@
       "news",
       "href",
       "https",
-      "xinhua",
-      "english"
+      "google",
+      "articles"
     ],
     "sub_sahara": [],
     "east_europe": [],
