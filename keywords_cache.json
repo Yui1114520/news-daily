@@ -18,7 +18,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "donald"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -29,7 +31,9 @@
       "articles"
     ],
     "sub_sahara": [],
-    "east_europe": [],
+    "east_europe": [
+      "tusk"
+    ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
