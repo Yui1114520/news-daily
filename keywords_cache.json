@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "nbsp"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -20,11 +18,11 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "donald"
-    ],
+    "north_america": [],
     "south_asia": [],
-    "middle_east": [],
+    "middle_east": [
+      "naza"
+    ],
     "east_asia": [
       "news",
       "href",
@@ -33,10 +31,7 @@
       "articles"
     ],
     "sub_sahara": [],
-    "east_europe": [
-      "tusk",
-      "nbsp"
-    ],
+    "east_europe": [],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
