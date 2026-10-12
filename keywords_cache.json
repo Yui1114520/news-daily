@@ -20,9 +20,7 @@
   "regions": {
     "north_america": [],
     "south_asia": [],
-    "middle_east": [
-      "naza"
-    ],
+    "middle_east": [],
     "east_asia": [
       "news",
       "href",
