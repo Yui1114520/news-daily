@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "nbsp"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -32,12 +34,13 @@
     ],
     "sub_sahara": [],
     "east_europe": [
-      "tusk"
+      "tusk",
+      "nbsp"
     ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-11"
+  "updated": "2026-10-12"
 }
