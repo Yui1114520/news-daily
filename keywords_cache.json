@@ -1,6 +1,10 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "donald",
+      "trump",
+      "kimberly"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -18,7 +22,10 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "donald",
+      "kimberly"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
