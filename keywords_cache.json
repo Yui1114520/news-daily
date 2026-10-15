@@ -6,9 +6,7 @@
     "geopolitics": [
       "news",
       "href",
-      "https",
-      "google",
-      "articles"
+      "https"
     ],
     "ecology": [],
     "social_movement": [],
@@ -24,9 +22,7 @@
     "east_asia": [
       "news",
       "href",
-      "https",
-      "google",
-      "articles"
+      "https"
     ],
     "sub_sahara": [],
     "east_europe": [],
@@ -35,5 +31,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-14"
+  "updated": "2026-10-15"
 }
