@@ -6,7 +6,9 @@
     "geopolitics": [
       "news",
       "href",
-      "https"
+      "https",
+      "google",
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -16,12 +18,17 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "donald"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
       "href",
-      "https"
+      "https",
+      "news",
+      "google",
+      "articles"
     ],
     "sub_sahara": [],
     "east_europe": [],
