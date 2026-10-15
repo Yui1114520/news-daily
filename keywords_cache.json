@@ -20,14 +20,15 @@
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
-      "news",
       "href",
       "https"
     ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "news"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
