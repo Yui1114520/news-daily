@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "nbsp"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -28,8 +26,7 @@
       "https",
       "news",
       "google",
-      "articles",
-      "macarena"
+      "articles"
     ],
     "sub_sahara": [],
     "east_europe": [],
