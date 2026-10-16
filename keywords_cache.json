@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "nbsp"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -18,9 +20,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "donald"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -28,16 +28,15 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "macarena"
     ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [
-      "news"
-    ],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }
