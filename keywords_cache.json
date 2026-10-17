@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "katie",
+      "zacharia"
+    ],
     "livelihood": [
       "news",
       "english",
@@ -9,7 +12,10 @@
     "tech": [],
     "geopolitics": [
       "href",
-      "https"
+      "https",
+      "news",
+      "google",
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -20,24 +26,23 @@
   },
   "regions": {
     "north_america": [
-      "robinson"
+      "katie",
+      "zacharia"
     ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
       "href",
       "https",
-      "news"
+      "news",
+      "google",
+      "articles"
     ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
-    "sea_oceania": [
-      "nazmi",
-      "amelia",
-      "earhart"
-    ],
+    "sea_oceania": [],
     "central_asia": []
   },
   "updated": "2026-10-17"
