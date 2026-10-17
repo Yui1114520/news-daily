@@ -1,17 +1,15 @@
 {
   "domains": {
-    "diplomacy": [
+    "diplomacy": [],
+    "livelihood": [
+      "news",
+      "english",
       "nbsp"
     ],
-    "livelihood": [],
     "tech": [],
     "geopolitics": [
-      "news",
       "href",
-      "https",
-      "google",
-      "articles",
-      "english"
+      "https"
     ],
     "ecology": [],
     "social_movement": [],
@@ -21,21 +19,25 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "robinson"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
       "href",
       "https",
-      "news",
-      "google",
-      "articles"
+      "news"
     ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
-    "sea_oceania": [],
+    "sea_oceania": [
+      "nazmi",
+      "amelia",
+      "earhart"
+    ],
     "central_asia": []
   },
   "updated": "2026-10-17"
