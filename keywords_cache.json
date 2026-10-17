@@ -10,7 +10,8 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -37,5 +38,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }
