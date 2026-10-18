@@ -1,10 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
-    "livelihood": [
-      "news",
-      "english"
+    "diplomacy": [
+      "maga"
     ],
+    "livelihood": [],
     "tech": [],
     "geopolitics": [
       "href",
@@ -22,7 +21,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "maga"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
