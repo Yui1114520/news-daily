@@ -1,9 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "katie",
-      "zacharia"
-    ],
+    "diplomacy": [],
     "livelihood": [
       "news",
       "english"
@@ -14,7 +11,8 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "robinson"
     ],
     "ecology": [],
     "social_movement": [],
@@ -24,10 +22,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "katie",
-      "zacharia"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [
@@ -44,5 +39,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }
