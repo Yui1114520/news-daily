@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "maga"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [
@@ -21,7 +19,7 @@
   },
   "regions": {
     "north_america": [
-      "maga"
+      "robert"
     ],
     "south_asia": [],
     "middle_east": [],
