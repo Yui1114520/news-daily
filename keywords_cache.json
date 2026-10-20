@@ -25,17 +25,18 @@
     "middle_east": [],
     "east_asia": [
       "href",
-      "https",
-      "news",
-      "google",
-      "articles"
+      "https"
     ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "news",
+      "google",
+      "articles"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-19"
+  "updated": "2026-10-20"
 }
