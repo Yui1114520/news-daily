@@ -33,7 +33,9 @@
     "west_europe": [
       "news",
       "google",
-      "articles"
+      "articles",
+      "href",
+      "https"
     ],
     "sea_oceania": [],
     "central_asia": []
