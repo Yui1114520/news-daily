@@ -18,15 +18,10 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "robert"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [
-      "href",
-      "https"
-    ],
+    "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
@@ -37,7 +32,10 @@
       "href",
       "https"
     ],
-    "sea_oceania": [],
+    "sea_oceania": [
+      "href",
+      "https"
+    ],
     "central_asia": []
   },
   "updated": "2026-10-20"
