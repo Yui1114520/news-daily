@@ -2,7 +2,9 @@
   "domains": {
     "diplomacy": [],
     "livelihood": [],
-    "tech": [],
+    "tech": [
+      "anthropic"
+    ],
     "geopolitics": [
       "href",
       "https",
@@ -18,7 +20,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "anthropic"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -38,5 +42,5 @@
     ],
     "central_asia": []
   },
-  "updated": "2026-10-20"
+  "updated": "2026-10-21"
 }
