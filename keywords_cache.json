@@ -18,9 +18,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "deepseek"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -40,5 +38,5 @@
     ],
     "central_asia": []
   },
-  "updated": "2026-10-21"
+  "updated": "2026-10-22"
 }
