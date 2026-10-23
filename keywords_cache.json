@@ -8,9 +8,7 @@
       "https",
       "news",
       "google",
-      "articles",
-      "english",
-      "xinhua"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -21,9 +19,7 @@
   },
   "regions": {
     "north_america": [],
-    "south_asia": [
-      "english"
-    ],
+    "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
