@@ -20,10 +20,10 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "johnson"
+    "north_america": [],
+    "south_asia": [
+      "english"
     ],
-    "south_asia": [],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
@@ -34,14 +34,10 @@
       "google",
       "articles",
       "href",
-      "https",
-      "english"
-    ],
-    "sea_oceania": [
-      "href",
       "https"
     ],
+    "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-22"
+  "updated": "2026-10-23"
 }
