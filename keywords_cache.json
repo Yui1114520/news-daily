@@ -8,7 +8,10 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "lewis",
+      "hamilton",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -21,19 +24,20 @@
     "north_america": [],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [],
+    "east_asia": [
+      "google",
+      "articles"
+    ],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [
       "news",
-      "google",
-      "articles",
       "href",
       "https"
     ],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-23"
+  "updated": "2026-10-24"
 }
