@@ -9,8 +9,6 @@
       "news",
       "google",
       "articles",
-      "lewis",
-      "hamilton",
       "english"
     ],
     "ecology": [],
@@ -34,7 +32,9 @@
     "west_europe": [
       "news",
       "href",
-      "https"
+      "https",
+      "google",
+      "articles"
     ],
     "sea_oceania": [],
     "central_asia": []
