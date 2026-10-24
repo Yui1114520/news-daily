@@ -8,8 +8,7 @@
       "https",
       "news",
       "google",
-      "articles",
-      "english"
+      "articles"
     ],
     "ecology": [],
     "social_movement": [],
@@ -22,10 +21,7 @@
     "north_america": [],
     "south_asia": [],
     "middle_east": [],
-    "east_asia": [
-      "google",
-      "articles"
-    ],
+    "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
