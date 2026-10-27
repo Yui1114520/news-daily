@@ -8,7 +8,9 @@
       "https",
       "news",
       "google",
-      "articles"
+      "articles",
+      "xinhua",
+      "english"
     ],
     "ecology": [],
     "social_movement": [],
@@ -44,5 +46,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-26"
+  "updated": "2026-10-27"
 }
