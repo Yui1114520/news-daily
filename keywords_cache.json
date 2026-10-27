@@ -13,7 +13,9 @@
       "english"
     ],
     "ecology": [],
-    "social_movement": [],
+    "social_movement": [
+      "bolsonaro"
+    ],
     "security": [],
     "economy": [],
     "culture": [],
@@ -21,7 +23,9 @@
   },
   "regions": {
     "north_america": [
-      "anthropic"
+      "luiz",
+      "lula",
+      "silva"
     ],
     "south_asia": [
       "xinhua",
