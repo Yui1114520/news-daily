@@ -23,7 +23,11 @@
     "north_america": [],
     "south_asia": [
       "xinhua",
-      "english"
+      "english",
+      "news",
+      "health",
+      "china",
+      "nbsp"
     ],
     "middle_east": [],
     "east_asia": [],
