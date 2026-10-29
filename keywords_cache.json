@@ -4,13 +4,23 @@
     "livelihood": [],
     "tech": [],
     "geopolitics": [
+      "news",
+      "xinhua",
+      "english",
+      "canada",
+      "testing",
+      "trump",
+      "president",
+      "rwanda",
+      "congo",
+      "conflict"
+    ],
+    "ecology": [
       "href",
       "https",
-      "news",
       "google",
       "articles"
     ],
-    "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
@@ -18,7 +28,23 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "chinese",
+      "nvidia",
+      "than",
+      "testing",
+      "leader",
+      "russian",
+      "train",
+      "station",
+      "least",
+      "officials",
+      "nbsp",
+      "economy",
+      "faster",
+      "expected",
+      "driven"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
