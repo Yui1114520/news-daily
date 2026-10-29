@@ -25,9 +25,7 @@
       "xinhua",
       "english",
       "news",
-      "health",
-      "china",
-      "nbsp"
+      "china"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -44,5 +42,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-28"
+  "updated": "2026-10-29"
 }
