@@ -6,7 +6,8 @@
     "geopolitics": [
       "news",
       "xinhua",
-      "english"
+      "english",
+      "jinping"
     ],
     "ecology": [
       "href",
@@ -22,9 +23,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "roadster"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -36,7 +35,10 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "jinping",
+      "xinhua",
+      "english"
     ],
     "sea_oceania": [],
     "central_asia": []
