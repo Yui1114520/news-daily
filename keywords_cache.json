@@ -12,7 +12,8 @@
       "href",
       "https",
       "google",
-      "articles"
+      "articles",
+      "news"
     ],
     "social_movement": [],
     "security": [],
@@ -21,13 +22,13 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "roadster"
+    ],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [
-      "chinese"
-    ],
+    "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [
