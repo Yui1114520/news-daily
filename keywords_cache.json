@@ -6,14 +6,7 @@
     "geopolitics": [
       "news",
       "xinhua",
-      "english",
-      "canada",
-      "testing",
-      "trump",
-      "president",
-      "rwanda",
-      "congo",
-      "conflict"
+      "english"
     ],
     "ecology": [
       "href",
@@ -28,27 +21,13 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "chinese",
-      "nvidia",
-      "than",
-      "testing",
-      "leader",
-      "russian",
-      "train",
-      "station",
-      "least",
-      "officials",
-      "nbsp",
-      "economy",
-      "faster",
-      "expected",
-      "driven"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [],
+    "sub_sahara": [
+      "chinese"
+    ],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [
@@ -61,5 +40,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-10-29"
+  "updated": "2026-10-30"
 }
