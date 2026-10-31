@@ -3,12 +3,7 @@
     "diplomacy": [],
     "livelihood": [],
     "tech": [],
-    "geopolitics": [
-      "news",
-      "xinhua",
-      "english",
-      "jinping"
-    ],
+    "geopolitics": [],
     "ecology": [
       "href",
       "https",
@@ -35,10 +30,7 @@
       "href",
       "https",
       "google",
-      "articles",
-      "jinping",
-      "xinhua",
-      "english"
+      "articles"
     ],
     "sea_oceania": [],
     "central_asia": []
