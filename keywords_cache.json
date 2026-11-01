@@ -12,19 +12,14 @@
       "news",
       "english"
     ],
-    "social_movement": [
-      "bolsonaro"
-    ],
+    "social_movement": [],
     "security": [],
     "economy": [],
     "culture": [],
     "military": []
   },
   "regions": {
-    "north_america": [
-      "marco",
-      "rubio"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -36,12 +31,12 @@
       "href",
       "https",
       "google",
-      "articles",
-      "chinese",
+      "articles"
+    ],
+    "sea_oceania": [
       "xinhua",
       "english"
     ],
-    "sea_oceania": [],
     "central_asia": []
   },
   "updated": "2026-11-01"
