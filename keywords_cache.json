@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "axios"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -10,7 +12,11 @@
       "google",
       "articles",
       "news",
-      "english"
+      "english",
+      "health",
+      "china",
+      "xinhua",
+      "nbsp"
     ],
     "social_movement": [],
     "security": [],
@@ -19,9 +25,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "meta"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
