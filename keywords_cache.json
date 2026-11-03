@@ -11,8 +11,7 @@
       "google",
       "articles",
       "news",
-      "english",
-      "xinhua"
+      "href"
     ],
     "social_movement": [],
     "security": [],
@@ -22,7 +21,9 @@
   },
   "regions": {
     "north_america": [],
-    "south_asia": [],
+    "south_asia": [
+      "news"
+    ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [
@@ -34,14 +35,10 @@
       "news",
       "https",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
-    "sea_oceania": [
-      "xinhua",
-      "english",
-      "news",
-      "china"
-    ],
+    "sea_oceania": [],
     "central_asia": []
   },
   "updated": "2026-11-03"
