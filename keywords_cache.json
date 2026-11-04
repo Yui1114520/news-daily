@@ -1,9 +1,7 @@
 {
   "domains": {
     "diplomacy": [],
-    "livelihood": [
-      "href"
-    ],
+    "livelihood": [],
     "tech": [],
     "geopolitics": [],
     "ecology": [
@@ -21,14 +19,10 @@
   },
   "regions": {
     "north_america": [],
-    "south_asia": [
-      "news"
-    ],
+    "south_asia": [],
     "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [
-      "href"
-    ],
+    "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [
@@ -38,7 +32,10 @@
       "articles",
       "href",
       "english",
-      "xinhua"
+      "xinhua",
+      "opinion",
+      "china",
+      "nbsp"
     ],
     "sea_oceania": [],
     "central_asia": []
