@@ -4,17 +4,13 @@
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
-    "ecology": [
-      "https",
-      "google",
-      "articles",
-      "news",
-      "href"
-    ],
+    "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
-    "culture": [],
+    "culture": [
+      "news"
+    ],
     "military": []
   },
   "regions": {
@@ -27,15 +23,11 @@
     "latin_america": [],
     "west_europe": [
       "news",
-      "https",
-      "google",
-      "articles",
-      "href",
       "xinhua",
       "english",
       "china",
-      "opinion",
-      "nbsp"
+      "nbsp",
+      "sports"
     ],
     "sea_oceania": [],
     "central_asia": []
