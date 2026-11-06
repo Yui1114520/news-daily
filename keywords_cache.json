@@ -30,10 +30,15 @@
       "https",
       "google",
       "articles",
-      "href"
+      "href",
+      "xinhua",
+      "english",
+      "china",
+      "opinion",
+      "nbsp"
     ],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-05"
+  "updated": "2026-11-06"
 }
