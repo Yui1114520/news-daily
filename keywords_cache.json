@@ -23,11 +23,11 @@
     "latin_america": [],
     "west_europe": [
       "news",
-      "xinhua",
-      "english",
-      "china",
-      "nbsp",
-      "sports"
+      "https",
+      "google",
+      "articles",
+      "href",
+      "cgtn"
     ],
     "sea_oceania": [],
     "central_asia": []
