@@ -9,7 +9,11 @@
     "security": [],
     "economy": [],
     "culture": [
-      "news"
+      "news",
+      "href",
+      "https",
+      "google",
+      "articles"
     ],
     "military": []
   },
@@ -27,10 +31,12 @@
       "google",
       "articles",
       "href",
-      "cgtn"
+      "cgtn",
+      "opinion",
+      "nbsp"
     ],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
 }
