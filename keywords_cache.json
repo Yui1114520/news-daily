@@ -1,13 +1,13 @@
 {
   "domains": {
-    "diplomacy": [
-      "dana"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
     "ecology": [],
-    "social_movement": [],
+    "social_movement": [
+      "bolsonaro"
+    ],
     "security": [],
     "economy": [],
     "culture": [
@@ -21,7 +21,7 @@
   },
   "regions": {
     "north_america": [
-      "dana"
+      "cgtn"
     ],
     "south_asia": [],
     "middle_east": [],
@@ -35,11 +35,9 @@
       "google",
       "articles",
       "href",
-      "opinion",
       "china",
       "xinhua",
-      "english",
-      "nbsp"
+      "english"
     ],
     "sea_oceania": [],
     "central_asia": []
