@@ -20,9 +20,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "cgtn"
-    ],
+    "north_america": [],
     "south_asia": [],
     "middle_east": [],
     "east_asia": [],
@@ -34,13 +32,12 @@
       "https",
       "google",
       "articles",
-      "href",
-      "china",
-      "xinhua",
-      "english"
+      "href"
     ],
     "sea_oceania": [],
-    "central_asia": []
+    "central_asia": [
+      "cgtn"
+    ]
   },
-  "updated": "2026-11-08"
+  "updated": "2026-11-09"
 }
