@@ -1,7 +1,7 @@
 {
   "domains": {
     "diplomacy": [
-      "news"
+      "megaspeed"
     ],
     "livelihood": [],
     "tech": [],
@@ -14,15 +14,15 @@
       "news",
       "https",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "military": []
   },
   "regions": {
     "north_america": [
-      "huang",
-      "cindy",
-      "holscher"
+      "megaspeed",
+      "bessent"
     ],
     "south_asia": [
       "https",
