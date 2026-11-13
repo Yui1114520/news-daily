@@ -1,6 +1,9 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "pete",
+      "hegseth"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -10,7 +13,6 @@
     "economy": [],
     "culture": [
       "news",
-      "href",
       "https",
       "google",
       "articles"
@@ -21,25 +23,26 @@
     "north_america": [
       "huang",
       "alice",
-      "megaspeed"
+      "pete",
+      "hegseth"
     ],
-    "south_asia": [],
-    "middle_east": [],
-    "east_asia": [],
-    "sub_sahara": [],
-    "east_europe": [],
-    "latin_america": [],
-    "west_europe": [
-      "news",
+    "south_asia": [
       "https",
       "google",
-      "articles",
-      "href"
+      "articles"
     ],
+    "middle_east": [],
+    "east_asia": [],
+    "sub_sahara": [
+      "news"
+    ],
+    "east_europe": [],
+    "latin_america": [],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": [
       "cgtn"
     ]
   },
-  "updated": "2026-11-12"
+  "updated": "2026-11-13"
 }
