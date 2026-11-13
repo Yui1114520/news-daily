@@ -1,8 +1,7 @@
 {
   "domains": {
     "diplomacy": [
-      "pete",
-      "hegseth"
+      "news"
     ],
     "livelihood": [],
     "tech": [],
@@ -22,9 +21,8 @@
   "regions": {
     "north_america": [
       "huang",
-      "alice",
-      "pete",
-      "hegseth"
+      "cindy",
+      "holscher"
     ],
     "south_asia": [
       "https",
@@ -40,9 +38,7 @@
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
-    "central_asia": [
-      "cgtn"
-    ]
+    "central_asia": []
   },
   "updated": "2026-11-13"
 }
