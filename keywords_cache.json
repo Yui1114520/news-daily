@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "megaspeed"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -21,8 +19,7 @@
   },
   "regions": {
     "north_america": [
-      "megaspeed",
-      "bessent"
+      "silica"
     ],
     "south_asia": [
       "https",
@@ -40,5 +37,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-13"
+  "updated": "2026-11-14"
 }
