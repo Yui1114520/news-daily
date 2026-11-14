@@ -21,18 +21,19 @@
     "north_america": [
       "nvidia",
       "colette",
-      "kress"
+      "kress",
+      "axios",
+      "maga"
     ],
     "south_asia": [
       "https",
       "google",
-      "articles"
+      "articles",
+      "news"
     ],
     "middle_east": [],
     "east_asia": [],
-    "sub_sahara": [
-      "news"
-    ],
+    "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
