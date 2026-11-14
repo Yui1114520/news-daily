@@ -19,7 +19,9 @@
   },
   "regions": {
     "north_america": [
-      "silica"
+      "nvidia",
+      "colette",
+      "kress"
     ],
     "south_asia": [
       "https",
