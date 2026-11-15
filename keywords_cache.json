@@ -1,9 +1,7 @@
 {
   "domains": {
     "diplomacy": [
-      "collado",
-      "sobra",
-      "excessive"
+      "sobra"
     ],
     "livelihood": [],
     "tech": [],
