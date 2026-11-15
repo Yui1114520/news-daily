@@ -1,6 +1,10 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "collado",
+      "sobra",
+      "excessive"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -18,13 +22,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "nvidia",
-      "colette",
-      "kress",
-      "axios",
-      "maga"
-    ],
+    "north_america": [],
     "south_asia": [
       "https",
       "google",
@@ -40,5 +38,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-14"
+  "updated": "2026-11-15"
 }
