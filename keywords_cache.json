@@ -18,14 +18,13 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "whatsapp"
-    ],
+    "north_america": [],
     "south_asia": [
       "https",
       "google",
       "articles",
-      "news"
+      "news",
+      "href"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -33,7 +32,9 @@
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
-    "sea_oceania": [],
+    "sea_oceania": [
+      "china"
+    ],
     "central_asia": []
   },
   "updated": "2026-11-16"
