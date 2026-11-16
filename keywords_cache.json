@@ -18,7 +18,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "whatsapp"
+    ],
     "south_asia": [
       "https",
       "google",
@@ -34,5 +36,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-15"
+  "updated": "2026-11-16"
 }
