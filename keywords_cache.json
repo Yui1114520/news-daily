@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "nbsp"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -17,7 +19,9 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "nbsp"
+    ],
     "south_asia": [
       "https",
       "google",
@@ -30,10 +34,8 @@
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
-    "sea_oceania": [
-      "china"
-    ],
+    "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-16"
+  "updated": "2026-11-17"
 }
