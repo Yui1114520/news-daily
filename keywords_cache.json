@@ -2,7 +2,9 @@
   "domains": {
     "diplomacy": [],
     "livelihood": [],
-    "tech": [],
+    "tech": [
+      "href"
+    ],
     "geopolitics": [],
     "ecology": [],
     "social_movement": [],
@@ -12,8 +14,7 @@
       "news",
       "https",
       "google",
-      "articles",
-      "href"
+      "articles"
     ],
     "military": []
   },
