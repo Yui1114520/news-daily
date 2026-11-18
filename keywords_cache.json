@@ -12,7 +12,8 @@
       "news",
       "https",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "military": []
   },
@@ -22,7 +23,8 @@
       "https",
       "google",
       "articles",
-      "news"
+      "news",
+      "href"
     ],
     "middle_east": [],
     "east_asia": [],
