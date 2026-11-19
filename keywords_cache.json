@@ -14,12 +14,15 @@
       "news",
       "https",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "nbsp"
+    ],
     "south_asia": [
       "https",
       "google",
@@ -36,5 +39,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-18"
+  "updated": "2026-11-19"
 }
