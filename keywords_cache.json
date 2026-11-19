@@ -2,11 +2,11 @@
   "domains": {
     "diplomacy": [],
     "livelihood": [],
-    "tech": [
+    "tech": [],
+    "geopolitics": [],
+    "ecology": [
       "href"
     ],
-    "geopolitics": [],
-    "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
@@ -21,7 +21,8 @@
   },
   "regions": {
     "north_america": [
-      "font"
+      "nvidia",
+      "pelicot"
     ],
     "south_asia": [
       "https",
