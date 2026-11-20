@@ -4,9 +4,7 @@
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
-    "ecology": [
-      "href"
-    ],
+    "ecology": [],
     "social_movement": [],
     "security": [],
     "economy": [],
@@ -20,10 +18,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "nvidia",
-      "pelicot"
-    ],
+    "north_america": [],
     "south_asia": [
       "https",
       "google",
@@ -40,5 +35,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-19"
+  "updated": "2026-11-20"
 }
