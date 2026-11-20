@@ -1,16 +1,12 @@
 {
   "domains": {
-    "diplomacy": [
-      "maga"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
     "ecology": [],
     "social_movement": [],
-    "security": [
-      "jovenel"
-    ],
+    "security": [],
     "economy": [],
     "culture": [
       "news",
@@ -22,9 +18,7 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "maga"
-    ],
+    "north_america": [],
     "south_asia": [
       "https",
       "google",
