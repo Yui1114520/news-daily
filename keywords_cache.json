@@ -18,13 +18,16 @@
     "military": []
   },
   "regions": {
-    "north_america": [],
+    "north_america": [
+      "fausto",
+      "isidro",
+      "meza"
+    ],
     "south_asia": [
       "https",
       "google",
       "articles",
-      "news",
-      "href"
+      "news"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -32,7 +35,9 @@
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
-    "sea_oceania": [],
+    "sea_oceania": [
+      "href"
+    ],
     "central_asia": []
   },
   "updated": "2026-11-21"
