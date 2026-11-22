@@ -7,13 +7,14 @@
     "ecology": [],
     "social_movement": [],
     "security": [],
-    "economy": [],
+    "economy": [
+      "href"
+    ],
     "culture": [
       "news",
       "https",
       "google",
-      "articles",
-      "href"
+      "articles"
     ],
     "military": []
   },
@@ -29,16 +30,16 @@
       "articles",
       "news"
     ],
-    "middle_east": [],
+    "middle_east": [
+      "href"
+    ],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
     "west_europe": [],
-    "sea_oceania": [
-      "href"
-    ],
+    "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-21"
+  "updated": "2026-11-22"
 }
