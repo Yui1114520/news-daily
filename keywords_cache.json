@@ -14,7 +14,8 @@
       "news",
       "https",
       "google",
-      "articles"
+      "articles",
+      "href"
     ],
     "military": []
   },
@@ -28,16 +29,17 @@
       "https",
       "google",
       "articles",
-      "news"
-    ],
-    "middle_east": [
+      "news",
       "href"
     ],
+    "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [],
+    "west_europe": [
+      "href"
+    ],
     "sea_oceania": [],
     "central_asia": []
   },
