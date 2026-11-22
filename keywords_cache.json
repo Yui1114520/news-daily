@@ -1,6 +1,8 @@
 {
   "domains": {
-    "diplomacy": [],
+    "diplomacy": [
+      "politico"
+    ],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
