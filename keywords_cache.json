@@ -2,9 +2,7 @@
   "domains": {
     "diplomacy": [],
     "livelihood": [],
-    "tech": [
-      "politico"
-    ],
+    "tech": [],
     "geopolitics": [],
     "ecology": [],
     "social_movement": [],
@@ -25,7 +23,8 @@
     "north_america": [
       "fausto",
       "isidro",
-      "meza"
+      "meza",
+      "flores"
     ],
     "south_asia": [
       "https",
