@@ -1,10 +1,10 @@
 {
   "domains": {
-    "diplomacy": [
+    "diplomacy": [],
+    "livelihood": [],
+    "tech": [
       "politico"
     ],
-    "livelihood": [],
-    "tech": [],
     "geopolitics": [],
     "ecology": [],
     "social_movement": [],
@@ -45,5 +45,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-22"
+  "updated": "2026-11-23"
 }
