@@ -7,9 +7,7 @@
     "ecology": [],
     "social_movement": [],
     "security": [],
-    "economy": [
-      "href"
-    ],
+    "economy": [],
     "culture": [
       "news",
       "https",
@@ -21,26 +19,22 @@
   },
   "regions": {
     "north_america": [
-      "fausto",
-      "isidro",
-      "meza",
-      "flores"
+      "megaspeed"
     ],
     "south_asia": [
       "https",
       "google",
       "articles",
       "news",
-      "href"
+      "href",
+      "english"
     ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
     "east_europe": [],
     "latin_america": [],
-    "west_europe": [
-      "href"
-    ],
+    "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
