@@ -18,16 +18,13 @@
     "military": []
   },
   "regions": {
-    "north_america": [
-      "megaspeed"
-    ],
+    "north_america": [],
     "south_asia": [
       "https",
       "google",
       "articles",
       "news",
-      "href",
-      "english"
+      "href"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -38,5 +35,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-23"
+  "updated": "2026-11-24"
 }
