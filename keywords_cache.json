@@ -1,8 +1,6 @@
 {
   "domains": {
-    "diplomacy": [
-      "kilmar"
-    ],
+    "diplomacy": [],
     "livelihood": [],
     "tech": [],
     "geopolitics": [],
@@ -15,15 +13,16 @@
       "https",
       "google",
       "articles",
-      "href",
-      "ginton",
-      "drake"
+      "href"
     ],
     "military": []
   },
   "regions": {
     "north_america": [
-      "kilmar"
+      "huang",
+      "alice",
+      "nvidia",
+      "jensen"
     ],
     "south_asia": [
       "https",
@@ -33,9 +32,7 @@
       "href",
       "china",
       "xinhua",
-      "english",
-      "health",
-      "nbsp"
+      "english"
     ],
     "middle_east": [],
     "east_asia": [],
