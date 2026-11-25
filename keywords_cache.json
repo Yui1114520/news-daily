@@ -15,7 +15,9 @@
       "https",
       "google",
       "articles",
-      "href"
+      "href",
+      "ginton",
+      "drake"
     ],
     "military": []
   },
@@ -28,7 +30,12 @@
       "google",
       "articles",
       "news",
-      "href"
+      "href",
+      "china",
+      "xinhua",
+      "english",
+      "health",
+      "nbsp"
     ],
     "middle_east": [],
     "east_asia": [],
