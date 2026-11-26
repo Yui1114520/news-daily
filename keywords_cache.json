@@ -19,10 +19,7 @@
   },
   "regions": {
     "north_america": [
-      "huang",
-      "alice",
-      "nvidia",
-      "jensen"
+      "nvidia"
     ],
     "south_asia": [
       "https",
@@ -32,7 +29,9 @@
       "href",
       "china",
       "xinhua",
-      "english"
+      "english",
+      "health",
+      "nbsp"
     ],
     "middle_east": [],
     "east_asia": [],
@@ -43,5 +42,5 @@
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-25"
+  "updated": "2026-11-26"
 }
