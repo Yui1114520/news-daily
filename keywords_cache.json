@@ -24,21 +24,19 @@
       "google",
       "articles",
       "news",
-      "href",
-      "china",
-      "xinhua",
-      "english",
-      "opinion",
-      "nbsp"
+      "href"
     ],
     "middle_east": [],
     "east_asia": [],
     "sub_sahara": [],
-    "east_europe": [],
+    "east_europe": [
+      "xinhua",
+      "english"
+    ],
     "latin_america": [],
     "west_europe": [],
     "sea_oceania": [],
     "central_asia": []
   },
-  "updated": "2026-11-26"
+  "updated": "2026-11-27"
 }
